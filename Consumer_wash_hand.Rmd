@@ -1,0 +1,50 @@
+---
+title: "Consumers Behavior on Food Data Sets Cleaning"
+author: "Yunzhi Kong"
+date: "9/19/2020"
+output: html_document
+---
+
+```{r setup,message=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(kableExtra)
+```
+
+This is an R Markdown document that shows the process of cleaning two data sets of consumer behavior on food. 
+
+You can find the raw data sets on the below link:
+
+* [Consumers who wash hands and surfaces often during food preparation](https://github.com/yunzhinikkikong/ANLY-501-portfolio/blob/FS/FS-5.1-data.csv)
+
+* [Consumers who refrigerate foods promptly](https://github.com/yunzhinikkikong/ANLY-501-portfolio/blob/FS/FS5.4.csv)
+
+### Part one: Consumers who wash hands and surfaces often during food preparation
+
+```{r message=FALSE,warning=FALSE}
+# read the CSV file into R
+Consumer_preparation<-read.csv("FS-5.1-data.csv",header = TRUE)
+# Delete all the footnote information in the initial file
+Consumer_preparation<-Consumer_preparation[1:30,]
+# remove Geography information,since they are all the same
+Consumer_preparation<-Consumer_preparation[,-2]
+# I will only keep the estimates and drop the standard error and CI column
+Consumer_preparation<-Consumer_preparation[-1,-c(3,4,5,7,8,9,11,12,13)]
+names(Consumer_preparation)<-c("category","2006","2009-2010","2015-2016")
+write.csv(Consumer_preparation,"Consumer_preparation.csv", row.names = FALSE)
+```
+
+### Part two: Consumers who refrigerate foods promptly
+
+```{r message=FALSE,warning=FALSE}
+# read the CSV file into R
+Consumer_refrigerate<-read.csv("FS5.4.csv",header = TRUE)
+# Delete all the footnote information in the initial file
+Consumer_refrigerate<-Consumer_refrigerate[1:30,]
+# remove Geography information,since they are all the same
+Consumer_refrigerate<-Consumer_refrigerate[,-2]
+# I will only keep the estimates and drop the standard error and CI column
+Consumer_refrigerate<-Consumer_refrigerate[-1,-c(3,4,5,7,8,9,11,12,13)]
+names(Consumer_refrigerate)<-c("category","2006","2009-2010","2015-2016")
+write.csv(Consumer_refrigerate,"Consumer_refrigerate.csv", row.names = FALSE)
+```
