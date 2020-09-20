@@ -1,0 +1,147 @@
+---
+title: "National Foodborne Disease Outbreak Data Cleaning"
+author: "Yunzhi Kong"
+date: "9/17/2020"
+output: html_document
+---
+
+```{r setup,message=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(kableExtra)
+```
+
+This is an R Markdown document that shows the process of cleaning the National Foodborne Disease Outbreak data set. 
+
+You can find the raw data set on the below link:
+
+* [National Foodborne Disease Outbreak](https://github.com/yunzhinikkikong/ANLY-501-portfolio/blob/outbreak/NationalOutbreakPublicDataTool.csv)
+
+
+#### Clean the Initial Data Set
+
+```{r message=FALSE,warning=FALSE}
+# read the CSV file into R
+Foodborne<-read.csv("NationalOutbreakPublicDataTool.csv",header = TRUE)
+# dealing with missing value and lots of "0" in initial data set
+all_na <- function(x) any(!is.na(x))
+Foodborne<-Foodborne%>% select_if(all_na)
+# Remove unnecessary column
+Foodborne<-Foodborne[,-c(6,7,14,15,16)]
+# Dealing with duplicate information, I will only keep the illness information
+Foodborne<-Foodborne[,-c(8,9,10,11)]
+# Check how many levels do variable "Primary.Mode" have
+Foodborne$Primary.Mode<-factor(Foodborne$Primary.Mode)
+Foodborne%>%count(Primary.Mode)
+# There is only one level, so I will not keep this variable
+Foodborne<-Foodborne[,-c(4)]
+# delete rows with missing value
+Foodborne[Foodborne == ""] <- NA
+Foodborne<-Foodborne%>% drop_na()
+```
+
+#### Deeply Explore Some Variables
+
+
+##### the variable `year`
+
+```{r message=FALSE,warning=FALSE,echo=FALSE}
+# check the range
+Foodborne%>%count(Year)
+# The range is from 1998 to 2018, I will only keep year after 2007
+Foodborne<-Foodborne%>%filter(Year>2007)
+```
+
+##### the variable `setting` 
+
+```{r message=FALSE,warning=FALSE,echo=FALSE}
+# check the level
+Foodborne%>%count(Setting)%>%arrange(desc(n))
+```
+
+There are 167 different types of setting in total, which is a huge amount. However, we can categorize them in to less number of levels since the original classification is too detailed for analysis, for example,
+there are more than 5 sub-category for the restaurant. I will create a new variable called `setting_new` with below levels. Note that some are actually provide more than one settings in one case, for this situation, I will only keep the first one as initial.
+
+* restaurant
+* office
+* grocery store
+* private residence
+* school
+* caterer 
+* prison
+* other
+
+```{r message=FALSE,warning=FALSE}
+# Remove punctuation and shorter the length of string in Setting
+Foodborne$setting_new<-Foodborne$Setting%>%str_remove_all("[[:punct:]]")
+Foodborne$setting_new<-Foodborne$setting_new%>%substr(1,10)
+  # Store Setting information in the new variable
+Foodborne$setting_new<-ifelse(str_detect(Foodborne$setting_new,"Restaurant")==TRUE,"restaurant",
+                               ifelse(str_detect(Foodborne$setting_new,"Private")==TRUE,"private residence",
+                               ifelse(str_detect(Foodborne$setting_new,"Office")==TRUE,"office",
+                               ifelse(str_detect(Foodborne$setting_new,"School")==TRUE,"school",
+                               ifelse(str_detect(Foodborne$setting_new,"Caterer")==TRUE,"caterer", 
+                                      ifelse(str_detect(Foodborne$setting_new,"Banquet")==TRUE,"caterer", 
+                                      ifelse(str_detect(Foodborne$setting_new,"Prison")==TRUE,"prison",
+                            ifelse(str_detect(Foodborne$setting_new,"Grocery")==TRUE,"grocery","other"))))))))
+# Check the new level
+Foodborne%>%count(setting_new)%>%arrange(desc(n))
+```
+
+##### the variable `Etiology` 
+
+```{r message=FALSE,warning=FALSE,echo=FALSE}
+# check the level
+Foodborne%>%count(Etiology)%>%arrange(desc(n))
+```
+There are more than 200 rows in my checking level result, I will re-category this variable using the similar method as before. I will create a new variable called `Etiology_new` with below levels, which are the baterial species that also appeared in another data sets I collected.
+
+* Campylobacter
+* Escherichia
+* Salmonella
+* Norovirus
+* Other
+
+```{r message=FALSE,warning=FALSE}
+# Remove punctuation and shorter the length of string in Setting
+Foodborne$Etiology_new<-Foodborne$Etiology%>%substr(1,10)
+  # Store Setting information in the new variable
+Foodborne$Etiology_new<-ifelse(str_detect(Foodborne$Etiology_new,"Norovirus")==TRUE,"Norovirus",
+                              ifelse(str_detect(Foodborne$Etiology_new,"Campylobac")==TRUE,"Campylobacter",
+                               ifelse(str_detect(Foodborne$Etiology_new,"Salmonella")==TRUE,"Salmonella",
+                           ifelse(str_detect(Foodborne$Etiology_new,"Escherichi")==TRUE,"Escherichia","Other"))))
+# Check the new level
+Foodborne%>%count(Etiology_new)%>%arrange(desc(n))
+# Here comes the cleaned data set
+Foodborne_new<-Foodborne[,-c(4,5)]
+# label the variables
+Foodborne_new$setting_new<-factor(Foodborne_new$setting_new)
+Foodborne_new$Etiology_new<-factor(Foodborne_new$Etiology_new)
+```
+
+##### the variable `Illness`
+
+Let's check the distribution of number of Illness
+
+```{r}
+Foodborne_new%>%
+  ggplot(aes( y=Illnesses)) +
+  geom_boxplot()+
+  ggtitle("Boxplot of Number of Foodborne Illness")
+
+# There is a extreme number, nearly 2000. And there are plenty of outliers observed, I will only keep Illnesses less than 50, remove huge outbreak issue for analysis.
+Foodborne_new<-Foodborne_new[(Foodborne_new$Illnesses<=50),]
+Foodborne_new%>%
+  ggplot(aes( y=Illnesses)) +
+  geom_boxplot()+
+  ggtitle("Updated Boxplot of Number of Foodborne Illness")
+
+write.csv(Foodborne_new,"Foodborne_new.csv", row.names = FALSE)
+```
+
+
+
+
+
+
+
