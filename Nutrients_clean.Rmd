@@ -1,0 +1,51 @@
+---
+title: "U.S. consumption of plant nutrients data cleaning"
+author: "Yunzhi Kong"
+date: "9/20/2020"
+output: html_document
+---
+
+```{r setup,message=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(kableExtra)
+```
+
+This is an R Markdown document that shows the process of cleaning the U.S. consumption of plant nutrients data. 
+You can find the raw data set on the below link:
+
+* [U.S. consumption of plant nutrients data](https://github.com/yunzhinikkikong/ANLY-501-portfolio/blob/master/U.S.%20consumption%20of%20plant%20nutrients.csv)
+
+
+```{r message=FALSE,warning=FALSE}
+nutrient<-read.csv("U.S. consumption of plant nutrients.csv",skip = 3)
+# remove empty columns
+nutrient<-nutrient[,-c(2,7,11,12,13,14)]
+# The note on the first three rows lets us know that the data set contains duplicate information.
+# It includes both percentage and count, I will drop the percentage.
+nutrient<-nutrient[-c(1,2,3),-c(6,7,8)]
+# drop the footnote
+nutrient<-nutrient[1:52,]
+names(nutrient)<-c("year","Nitrogen","Phosphate","Potash","Total")
+
+#### convert all columns into numeric 
+nutrient$Nitrogen=gsub(",","",nutrient$Nitrogen)
+nutrient$Nitrogen=as.numeric(nutrient$Nitrogen)
+nutrient$Phosphate=gsub(",","",nutrient$Phosphate)
+nutrient$Phosphate=as.numeric(nutrient$Phosphate)
+nutrient$Potash=gsub(",","",nutrient$Potash)
+nutrient$Potash=as.numeric(nutrient$Potash)
+
+# the total value column give wrong sum, many are less or more than 1 actual value, I will re-calculate the total
+nutrient<-nutrient%>%
+   mutate(Total = rowSums(.[2:4]))
+write.csv(nutrient,"nutrient_clean.csv", row.names = FALSE)
+# Check the density plot of the total value
+nutrient%>%ggplot( aes(x=Total)) + 
+  geom_density(color="darkblue", fill="lightblue")+
+  ggtitle("Density Plot of Total Value")
+```
+
+
+
+
