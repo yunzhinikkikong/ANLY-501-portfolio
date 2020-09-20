@@ -1,0 +1,1827 @@
+State,LandCategory,Region,Region or State,Year,Acre Value
+Northeast,Farm Real Estate,Northeast,Region,2007,4920.0
+Connecticut,Farm Real Estate,Northeast,State,2007,12700.0
+Delaware,Farm Real Estate,Northeast,State,2007,10700.0
+Maine,Farm Real Estate,Northeast,State,2007,2230.0
+Maryland,Farm Real Estate,Northeast,State,2007,8500.0
+Massachusetts,Farm Real Estate,Northeast,State,2007,11900.0
+New Hampshire,Farm Real Estate,Northeast,State,2007,4800.0
+New Jersey,Farm Real Estate,Northeast,State,2007,15700.0
+New York,Farm Real Estate,Northeast,State,2007,2180.0
+Pennsylvania,Farm Real Estate,Northeast,State,2007,4970.0
+Rhode Island,Farm Real Estate,Northeast,State,2007,16400.0
+Vermont,Farm Real Estate,Northeast,State,2007,2740.0
+Lake,Farm Real Estate,Lake States,Region,2007,3180.0
+Michigan,Farm Real Estate,Lake States,State,2007,3760.0
+Minnesota,Farm Real Estate,Lake States,State,2007,2700.0
+Wisconsin,Farm Real Estate,Lake States,State,2007,3640.0
+Corn Belt,Farm Real Estate,Corn Belt,Region,2007,3290.0
+Illinois,Farm Real Estate,Corn Belt,State,2007,4020.0
+Indiana,Farm Real Estate,Corn Belt,State,2007,3640.0
+Iowa,Farm Real Estate,Corn Belt,State,2007,3370.0
+Missouri,Farm Real Estate,Corn Belt,State,2007,2170.0
+Ohio,Farm Real Estate,Corn Belt,State,2007,3700.0
+Northern Plains,Farm Real Estate,Northern Plains,Region,2007,896.0
+Kansas,Farm Real Estate,Northern Plains,State,2007,980.0
+Nebraska,Farm Real Estate,Northern Plains,State,2007,1140.0
+North Dakota,Farm Real Estate,Northern Plains,State,2007,650.0
+South Dakota,Farm Real Estate,Northern Plains,State,2007,770.0
+Appalachian,Farm Real Estate,Appalachian,Region,2007,3520.0
+Kentucky,Farm Real Estate,Appalachian,State,2007,2740.0
+North Carolina,Farm Real Estate,Appalachian,State,2007,4330.0
+Tennessee,Farm Real Estate,Appalachian,State,2007,3250.0
+Virginia,Farm Real Estate,Appalachian,State,2007,4900.0
+West Virginia,Farm Real Estate,Appalachian,State,2007,2300.0
+Southeast,Farm Real Estate,Southeast,Region,2007,3890.0
+Alabama,Farm Real Estate,Southeast,State,2007,2200.0
+Florida,Farm Real Estate,Southeast,State,2007,5500.0
+Georgia,Farm Real Estate,Southeast,State,2007,4350.0
+South Carolina,Farm Real Estate,Southeast,State,2007,2820.0
+Delta,Farm Real Estate,Delta States,Region,2007,2080.0
+Arkansas,Farm Real Estate,Delta States,State,2007,2240.0
+Louisiana,Farm Real Estate,Delta States,State,2007,1950.0
+Mississippi,Farm Real Estate,Delta States,State,2007,1970.0
+Southern Plains,Farm Real Estate,Southern Plains,Region,2007,1320.0
+Oklahoma,Farm Real Estate,Southern Plains,State,2007,1080.0
+Texas,Farm Real Estate,Southern Plains,State,2007,1380.0
+Mountain,Farm Real Estate,Mountain,Region,2007,964.0
+Arizona,Farm Real Estate,Mountain,State,2007,3200.0
+Colorado,Farm Real Estate,Mountain,State,2007,1130.0
+Idaho,Farm Real Estate,Mountain,State,2007,2480.0
+Montana,Farm Real Estate,Mountain,State,2007,830.0
+Nevada,Farm Real Estate,Mountain,State,2007,980.0
+New Mexico,Farm Real Estate,Mountain,State,2007,460.0
+Utah,Farm Real Estate,Mountain,State,2007,1730.0
+Wyoming,Farm Real Estate,Mountain,State,2007,490.0
+Pacific,Farm Real Estate,Pacific,Region,2007,3660.0
+California,Farm Real Estate,Pacific,State,2007,5960.0
+Oregon,Farm Real Estate,Pacific,State,2007,1720.0
+Washington,Farm Real Estate,Pacific,State,2007,1850.0
+United States,Farm Real Estate,Continental U.S.,Region,2007,2010.0
+Northeast,Farm Real Estate,Northeast,Region,2008,4980.0
+Connecticut,Farm Real Estate,Northeast,State,2008,12700.0
+Delaware,Farm Real Estate,Northeast,State,2008,10300.0
+Maine,Farm Real Estate,Northeast,State,2008,2200.0
+Maryland,Farm Real Estate,Northeast,State,2008,8000.0
+Massachusetts,Farm Real Estate,Northeast,State,2008,12300.0
+New Hampshire,Farm Real Estate,Northeast,State,2008,4900.0
+New Jersey,Farm Real Estate,Northeast,State,2008,15300.0
+New York,Farm Real Estate,Northeast,State,2008,2350.0
+Pennsylvania,Farm Real Estate,Northeast,State,2008,5120.0
+Rhode Island,Farm Real Estate,Northeast,State,2008,16800.0
+Vermont,Farm Real Estate,Northeast,State,2008,2900.0
+Lake,Farm Real Estate,Lake States,Region,2008,3410.0
+Michigan,Farm Real Estate,Lake States,State,2008,3900.0
+Minnesota,Farm Real Estate,Lake States,State,2008,2970.0
+Wisconsin,Farm Real Estate,Lake States,State,2008,3850.0
+Corn Belt,Farm Real Estate,Corn Belt,Region,2008,3700.0
+Illinois,Farm Real Estate,Corn Belt,State,2008,4550.0
+Indiana,Farm Real Estate,Corn Belt,State,2008,4100.0
+Iowa,Farm Real Estate,Corn Belt,State,2008,3950.0
+Missouri,Farm Real Estate,Corn Belt,State,2008,2300.0
+Ohio,Farm Real Estate,Corn Belt,State,2008,4020.0
+Northern Plains,Farm Real Estate,Northern Plains,Region,2008,1020.0
+Kansas,Farm Real Estate,Northern Plains,State,2008,1020.0
+Nebraska,Farm Real Estate,Northern Plains,State,2008,1330.0
+North Dakota,Farm Real Estate,Northern Plains,State,2008,770.0
+South Dakota,Farm Real Estate,Northern Plains,State,2008,920.0
+Appalachian,Farm Real Estate,Appalachian,Region,2008,3650.0
+Kentucky,Farm Real Estate,Appalachian,State,2008,2850.0
+North Carolina,Farm Real Estate,Appalachian,State,2008,4450.0
+Tennessee,Farm Real Estate,Appalachian,State,2008,3450.0
+Virginia,Farm Real Estate,Appalachian,State,2008,5000.0
+West Virginia,Farm Real Estate,Appalachian,State,2008,2500.0
+Southeast,Farm Real Estate,Southeast,Region,2008,3940.0
+Alabama,Farm Real Estate,Southeast,State,2008,2300.0
+Florida,Farm Real Estate,Southeast,State,2008,5640.0
+Georgia,Farm Real Estate,Southeast,State,2008,4300.0
+South Carolina,Farm Real Estate,Southeast,State,2008,2950.0
+Delta,Farm Real Estate,Delta States,Region,2008,2220.0
+Arkansas,Farm Real Estate,Delta States,State,2008,2420.0
+Louisiana,Farm Real Estate,Delta States,State,2008,2050.0
+Mississippi,Farm Real Estate,Delta States,State,2008,2080.0
+Southern Plains,Farm Real Estate,Southern Plains,Region,2008,1470.0
+Oklahoma,Farm Real Estate,Southern Plains,State,2008,1150.0
+Texas,Farm Real Estate,Southern Plains,State,2008,1550.0
+Mountain,Farm Real Estate,Mountain,Region,2008,1030.0
+Arizona,Farm Real Estate,Mountain,State,2008,3500.0
+Colorado,Farm Real Estate,Mountain,State,2008,1150.0
+Idaho,Farm Real Estate,Mountain,State,2008,2500.0
+Montana,Farm Real Estate,Mountain,State,2008,900.0
+Nevada,Farm Real Estate,Mountain,State,2008,1000.0
+New Mexico,Farm Real Estate,Mountain,State,2008,500.0
+Utah,Farm Real Estate,Mountain,State,2008,1850.0
+Wyoming,Farm Real Estate,Mountain,State,2008,560.0
+Pacific,Farm Real Estate,Pacific,Region,2008,3970.0
+California,Farm Real Estate,Pacific,State,2008,6440.0
+Oregon,Farm Real Estate,Pacific,State,2008,1900.0
+Washington,Farm Real Estate,Pacific,State,2008,2020.0
+United States,Farm Real Estate,Continental U.S.,Region,2008,2170.0
+Northeast,Farm Real Estate,Northeast,Region,2009,4830.0
+Connecticut,Farm Real Estate,Northeast,State,2009,12000.0
+Delaware,Farm Real Estate,Northeast,State,2009,8900.0
+Maine,Farm Real Estate,Northeast,State,2009,2100.0
+Maryland,Farm Real Estate,Northeast,State,2009,7500.0
+Massachusetts,Farm Real Estate,Northeast,State,2009,12000.0
+New Hampshire,Farm Real Estate,Northeast,State,2009,4800.0
+New Jersey,Farm Real Estate,Northeast,State,2009,13800.0
+New York,Farm Real Estate,Northeast,State,2009,2400.0
+Pennsylvania,Farm Real Estate,Northeast,State,2009,5100.0
+Rhode Island,Farm Real Estate,Northeast,State,2009,15300.0
+Vermont,Farm Real Estate,Northeast,State,2009,2800.0
+Lake,Farm Real Estate,Lake States,Region,2009,3300.0
+Michigan,Farm Real Estate,Lake States,State,2009,3750.0
+Minnesota,Farm Real Estate,Lake States,State,2009,2870.0
+Wisconsin,Farm Real Estate,Lake States,State,2009,3750.0
+Corn Belt,Farm Real Estate,Corn Belt,Region,2009,3620.0
+Illinois,Farm Real Estate,Corn Belt,State,2009,4530.0
+Indiana,Farm Real Estate,Corn Belt,State,2009,4020.0
+Iowa,Farm Real Estate,Corn Belt,State,2009,3850.0
+Missouri,Farm Real Estate,Corn Belt,State,2009,2200.0
+Ohio,Farm Real Estate,Corn Belt,State,2009,3880.0
+Northern Plains,Farm Real Estate,Northern Plains,Region,2009,1020.0
+Kansas,Farm Real Estate,Northern Plains,State,2009,1030.0
+Nebraska,Farm Real Estate,Northern Plains,State,2009,1340.0
+North Dakota,Farm Real Estate,Northern Plains,State,2009,780.0
+South Dakota,Farm Real Estate,Northern Plains,State,2009,890.0
+Appalachian,Farm Real Estate,Appalachian,Region,2009,3530.0
+Kentucky,Farm Real Estate,Appalachian,State,2009,2850.0
+North Carolina,Farm Real Estate,Appalachian,State,2009,4250.0
+Tennessee,Farm Real Estate,Appalachian,State,2009,3300.0
+Virginia,Farm Real Estate,Appalachian,State,2009,4800.0
+West Virginia,Farm Real Estate,Appalachian,State,2009,2400.0
+Southeast,Farm Real Estate,Southeast,Region,2009,3690.0
+Alabama,Farm Real Estate,Southeast,State,2009,2150.0
+Florida,Farm Real Estate,Southeast,State,2009,5150.0
+Georgia,Farm Real Estate,Southeast,State,2009,4100.0
+South Carolina,Farm Real Estate,Southeast,State,2009,2900.0
+Delta,Farm Real Estate,Delta States,Region,2009,2160.0
+Arkansas,Farm Real Estate,Delta States,State,2009,2390.0
+Louisiana,Farm Real Estate,Delta States,State,2009,1970.0
+Mississippi,Farm Real Estate,Delta States,State,2009,2000.0
+Southern Plains,Farm Real Estate,Southern Plains,Region,2009,1470.0
+Oklahoma,Farm Real Estate,Southern Plains,State,2009,1170.0
+Texas,Farm Real Estate,Southern Plains,State,2009,1550.0
+Mountain,Farm Real Estate,Mountain,Region,2009,922.0
+Arizona,Farm Real Estate,Mountain,State,2009,3500.0
+Colorado,Farm Real Estate,Mountain,State,2009,1100.0
+Idaho,Farm Real Estate,Mountain,State,2009,2200.0
+Montana,Farm Real Estate,Mountain,State,2009,700.0
+Nevada,Farm Real Estate,Mountain,State,2009,1000.0
+New Mexico,Farm Real Estate,Mountain,State,2009,480.0
+Utah,Farm Real Estate,Mountain,State,2009,1800.0
+Wyoming,Farm Real Estate,Mountain,State,2009,520.0
+Pacific,Farm Real Estate,Pacific,Region,2009,4010.0
+California,Farm Real Estate,Pacific,State,2009,6600.0
+Oregon,Farm Real Estate,Pacific,State,2009,1800.0
+Washington,Farm Real Estate,Pacific,State,2009,2000.0
+United States,Farm Real Estate,Continental U.S.,Region,2009,2110.0
+Northeast,Farm Real Estate,Northeast,Region,2010,4690.0
+Connecticut,Farm Real Estate,Northeast,State,2010,11500.0
+Delaware,Farm Real Estate,Northeast,State,2010,8130.0
+Maine,Farm Real Estate,Northeast,State,2010,2050.0
+Maryland,Farm Real Estate,Northeast,State,2010,6980.0
+Massachusetts,Farm Real Estate,Northeast,State,2010,11200.0
+New Hampshire,Farm Real Estate,Northeast,State,2010,4690.0
+New Jersey,Farm Real Estate,Northeast,State,2010,13100.0
+New York,Farm Real Estate,Northeast,State,2010,2400.0
+Pennsylvania,Farm Real Estate,Northeast,State,2010,5050.0
+Rhode Island,Farm Real Estate,Northeast,State,2010,14600.0
+Vermont,Farm Real Estate,Northeast,State,2010,2900.0
+Lake,Farm Real Estate,Lake States,Region,2010,3220.0
+Michigan,Farm Real Estate,Lake States,State,2010,3490.0
+Minnesota,Farm Real Estate,Lake States,State,2010,2870.0
+Wisconsin,Farm Real Estate,Lake States,State,2010,3650.0
+Corn Belt,Farm Real Estate,Corn Belt,Region,2010,3830.0
+Illinois,Farm Real Estate,Corn Belt,State,2010,4720.0
+Indiana,Farm Real Estate,Corn Belt,State,2010,4170.0
+Iowa,Farm Real Estate,Corn Belt,State,2010,4350.0
+Missouri,Farm Real Estate,Corn Belt,State,2010,2270.0
+Ohio,Farm Real Estate,Corn Belt,State,2010,3850.0
+Northern Plains,Farm Real Estate,Northern Plains,Region,2010,1080.0
+Kansas,Farm Real Estate,Northern Plains,State,2010,1060.0
+Nebraska,Farm Real Estate,Northern Plains,State,2010,1470.0
+North Dakota,Farm Real Estate,Northern Plains,State,2010,821.0
+South Dakota,Farm Real Estate,Northern Plains,State,2010,945.0
+Appalachian,Farm Real Estate,Appalachian,Region,2010,3480.0
+Kentucky,Farm Real Estate,Appalachian,State,2010,2780.0
+North Carolina,Farm Real Estate,Appalachian,State,2010,4120.0
+Tennessee,Farm Real Estate,Appalachian,State,2010,3460.0
+Virginia,Farm Real Estate,Appalachian,State,2010,4500.0
+West Virginia,Farm Real Estate,Appalachian,State,2010,2330.0
+Southeast,Farm Real Estate,Southeast,Region,2010,3630.0
+Alabama,Farm Real Estate,Southeast,State,2010,2300.0
+Florida,Farm Real Estate,Southeast,State,2010,5090.0
+Georgia,Farm Real Estate,Southeast,State,2010,3770.0
+South Carolina,Farm Real Estate,Southeast,State,2010,2950.0
+Delta,Farm Real Estate,Delta States,Region,2010,2210.0
+Arkansas,Farm Real Estate,Delta States,State,2010,2400.0
+Louisiana,Farm Real Estate,Delta States,State,2010,2050.0
+Mississippi,Farm Real Estate,Delta States,State,2010,2080.0
+Southern Plains,Farm Real Estate,Southern Plains,Region,2010,1520.0
+Oklahoma,Farm Real Estate,Southern Plains,State,2010,1200.0
+Texas,Farm Real Estate,Southern Plains,State,2010,1600.0
+Mountain,Farm Real Estate,Mountain,Region,2010,902.0
+Arizona,Farm Real Estate,Mountain,State,2010,3390.0
+Colorado,Farm Real Estate,Mountain,State,2010,1080.0
+Idaho,Farm Real Estate,Mountain,State,2010,2110.0
+Montana,Farm Real Estate,Mountain,State,2010,700.0
+Nevada,Farm Real Estate,Mountain,State,2010,997.0
+New Mexico,Farm Real Estate,Mountain,State,2010,460.0
+Utah,Farm Real Estate,Mountain,State,2010,1810.0
+Wyoming,Farm Real Estate,Mountain,State,2010,540.0
+Pacific,Farm Real Estate,Pacific,Region,2010,4070.0
+California,Farm Real Estate,Pacific,State,2010,6660.0
+Oregon,Farm Real Estate,Pacific,State,2010,1830.0
+Washington,Farm Real Estate,Pacific,State,2010,2030.0
+United States,Farm Real Estate,Continental U.S.,Region,2010,2150.0
+Northeast,Farm Real Estate,Northeast,Region,2011,4690.0
+Connecticut,Farm Real Estate,Northeast,State,2011,11600.0
+Delaware,Farm Real Estate,Northeast,State,2011,8140.0
+Maine,Farm Real Estate,Northeast,State,2011,2080.0
+Maryland,Farm Real Estate,Northeast,State,2011,6870.0
+Massachusetts,Farm Real Estate,Northeast,State,2011,10900.0
+New Hampshire,Farm Real Estate,Northeast,State,2011,4560.0
+New Jersey,Farm Real Estate,Northeast,State,2011,12800.0
+New York,Farm Real Estate,Northeast,State,2011,2450.0
+Pennsylvania,Farm Real Estate,Northeast,State,2011,5070.0
+Rhode Island,Farm Real Estate,Northeast,State,2011,14400.0
+Vermont,Farm Real Estate,Northeast,State,2011,2980.0
+Lake,Farm Real Estate,Lake States,Region,2011,3450.0
+Michigan,Farm Real Estate,Lake States,State,2011,3600.0
+Minnesota,Farm Real Estate,Lake States,State,2011,3160.0
+Wisconsin,Farm Real Estate,Lake States,State,2011,3880.0
+Corn Belt,Farm Real Estate,Corn Belt,Region,2011,4460.0
+Illinois,Farm Real Estate,Corn Belt,State,2011,5390.0
+Indiana,Farm Real Estate,Corn Belt,State,2011,5070.0
+Iowa,Farm Real Estate,Corn Belt,State,2011,5410.0
+Missouri,Farm Real Estate,Corn Belt,State,2011,2420.0
+Ohio,Farm Real Estate,Corn Belt,State,2011,4160.0
+Northern Plains,Farm Real Estate,Northern Plains,Region,2011,1290.0
+Kansas,Farm Real Estate,Northern Plains,State,2011,1240.0
+Nebraska,Farm Real Estate,Northern Plains,State,2011,1840.0
+North Dakota,Farm Real Estate,Northern Plains,State,2011,930.0
+South Dakota,Farm Real Estate,Northern Plains,State,2011,1090.0
+Appalachian,Farm Real Estate,Appalachian,Region,2011,3520.0
+Kentucky,Farm Real Estate,Appalachian,State,2011,2750.0
+North Carolina,Farm Real Estate,Appalachian,State,2011,4340.0
+Tennessee,Farm Real Estate,Appalachian,State,2011,3510.0
+Virginia,Farm Real Estate,Appalachian,State,2011,4350.0
+West Virginia,Farm Real Estate,Appalachian,State,2011,2580.0
+Southeast,Farm Real Estate,Southeast,Region,2011,3610.0
+Alabama,Farm Real Estate,Southeast,State,2011,2340.0
+Florida,Farm Real Estate,Southeast,State,2011,5130.0
+Georgia,Farm Real Estate,Southeast,State,2011,3610.0
+South Carolina,Farm Real Estate,Southeast,State,2011,2980.0
+Delta,Farm Real Estate,Delta States,Region,2011,2300.0
+Arkansas,Farm Real Estate,Delta States,State,2011,2440.0
+Louisiana,Farm Real Estate,Delta States,State,2011,2200.0
+Mississippi,Farm Real Estate,Delta States,State,2011,2200.0
+Southern Plains,Farm Real Estate,Southern Plains,Region,2011,1580.0
+Oklahoma,Farm Real Estate,Southern Plains,State,2011,1260.0
+Texas,Farm Real Estate,Southern Plains,State,2011,1670.0
+Mountain,Farm Real Estate,Mountain,Region,2011,899.0
+Arizona,Farm Real Estate,Mountain,State,2011,3330.0
+Colorado,Farm Real Estate,Mountain,State,2011,1100.0
+Idaho,Farm Real Estate,Mountain,State,2011,2060.0
+Montana,Farm Real Estate,Mountain,State,2011,710.0
+Nevada,Farm Real Estate,Mountain,State,2011,995.0
+New Mexico,Farm Real Estate,Mountain,State,2011,470.0
+Utah,Farm Real Estate,Mountain,State,2011,1800.0
+Wyoming,Farm Real Estate,Mountain,State,2011,560.0
+Pacific,Farm Real Estate,Pacific,Region,2011,4100.0
+California,Farm Real Estate,Pacific,State,2011,6670.0
+Oregon,Farm Real Estate,Pacific,State,2011,1900.0
+Washington,Farm Real Estate,Pacific,State,2011,2060.0
+United States,Farm Real Estate,Continental U.S.,Region,2011,2300.0
+Northeast,Farm Real Estate,Northeast,Region,2012,4790.0
+Connecticut,Farm Real Estate,Northeast,State,2012,11200.0
+Delaware,Farm Real Estate,Northeast,State,2012,8150.0
+Maine,Farm Real Estate,Northeast,State,2012,2070.0
+Maryland,Farm Real Estate,Northeast,State,2012,6760.0
+Massachusetts,Farm Real Estate,Northeast,State,2012,10400.0
+New Hampshire,Farm Real Estate,Northeast,State,2012,4440.0
+New Jersey,Farm Real Estate,Northeast,State,2012,12300.0
+New York,Farm Real Estate,Northeast,State,2012,2650.0
+Pennsylvania,Farm Real Estate,Northeast,State,2012,5300.0
+Rhode Island,Farm Real Estate,Northeast,State,2012,13800.0
+Vermont,Farm Real Estate,Northeast,State,2012,3060.0
+Lake,Farm Real Estate,Lake States,Region,2012,3880.0
+Michigan,Farm Real Estate,Lake States,State,2012,3890.0
+Minnesota,Farm Real Estate,Lake States,State,2012,3740.0
+Wisconsin,Farm Real Estate,Lake States,State,2012,4110.0
+Corn Belt,Farm Real Estate,Corn Belt,Region,2012,5190.0
+Illinois,Farm Real Estate,Corn Belt,State,2012,6210.0
+Indiana,Farm Real Estate,Corn Belt,State,2012,5840.0
+Iowa,Farm Real Estate,Corn Belt,State,2012,6530.0
+Missouri,Farm Real Estate,Corn Belt,State,2012,2710.0
+Ohio,Farm Real Estate,Corn Belt,State,2012,4640.0
+Northern Plains,Farm Real Estate,Northern Plains,Region,2012,1620.0
+Kansas,Farm Real Estate,Northern Plains,State,2012,1510.0
+Nebraska,Farm Real Estate,Northern Plains,State,2012,2420.0
+North Dakota,Farm Real Estate,Northern Plains,State,2012,1160.0
+South Dakota,Farm Real Estate,Northern Plains,State,2012,1330.0
+Appalachian,Farm Real Estate,Appalachian,Region,2012,3530.0
+Kentucky,Farm Real Estate,Appalachian,State,2012,2840.0
+North Carolina,Farm Real Estate,Appalachian,State,2012,4330.0
+Tennessee,Farm Real Estate,Appalachian,State,2012,3520.0
+Virginia,Farm Real Estate,Appalachian,State,2012,4260.0
+West Virginia,Farm Real Estate,Appalachian,State,2012,2540.0
+Southeast,Farm Real Estate,Southeast,Region,2012,3530.0
+Alabama,Farm Real Estate,Southeast,State,2012,2390.0
+Florida,Farm Real Estate,Southeast,State,2012,5160.0
+Georgia,Farm Real Estate,Southeast,State,2012,3260.0
+South Carolina,Farm Real Estate,Southeast,State,2012,3010.0
+Delta,Farm Real Estate,Delta States,Region,2012,2440.0
+Arkansas,Farm Real Estate,Delta States,State,2012,2620.0
+Louisiana,Farm Real Estate,Delta States,State,2012,2400.0
+Mississippi,Farm Real Estate,Delta States,State,2012,2250.0
+Southern Plains,Farm Real Estate,Southern Plains,Region,2012,1620.0
+Oklahoma,Farm Real Estate,Southern Plains,State,2012,1370.0
+Texas,Farm Real Estate,Southern Plains,State,2012,1690.0
+Mountain,Farm Real Estate,Mountain,Region,2012,953.0
+Arizona,Farm Real Estate,Mountain,State,2012,3370.0
+Colorado,Farm Real Estate,Mountain,State,2012,1170.0
+Idaho,Farm Real Estate,Mountain,State,2012,2140.0
+Montana,Farm Real Estate,Mountain,State,2012,760.0
+Nevada,Farm Real Estate,Mountain,State,2012,1040.0
+New Mexico,Farm Real Estate,Mountain,State,2012,520.0
+Utah,Farm Real Estate,Mountain,State,2012,1800.0
+Wyoming,Farm Real Estate,Mountain,State,2012,590.0
+Pacific,Farm Real Estate,Pacific,Region,2012,4270.0
+California,Farm Real Estate,Pacific,State,2012,6880.0
+Oregon,Farm Real Estate,Pacific,State,2012,1960.0
+Washington,Farm Real Estate,Pacific,State,2012,2260.0
+United States,Farm Real Estate,Continental U.S.,Region,2012,2520.0
+Northeast,Farm Real Estate,Northeast,Region,2013,4850.0
+Connecticut,Farm Real Estate,Northeast,State,2013,11100.0
+Delaware,Farm Real Estate,Northeast,State,2013,8170.0
+Maine,Farm Real Estate,Northeast,State,2013,2100.0
+Maryland,Farm Real Estate,Northeast,State,2013,6930.0
+Massachusetts,Farm Real Estate,Northeast,State,2013,10400.0
+New Hampshire,Farm Real Estate,Northeast,State,2013,4310.0
+New Jersey,Farm Real Estate,Northeast,State,2013,12800.0
+New York,Farm Real Estate,Northeast,State,2013,2600.0
+Pennsylvania,Farm Real Estate,Northeast,State,2013,5430.0
+Rhode Island,Farm Real Estate,Northeast,State,2013,13800.0
+Vermont,Farm Real Estate,Northeast,State,2013,3200.0
+Lake,Farm Real Estate,Lake States,Region,2013,4240.0
+Michigan,Farm Real Estate,Lake States,State,2013,4300.0
+Minnesota,Farm Real Estate,Lake States,State,2013,4300.0
+Wisconsin,Farm Real Estate,Lake States,State,2013,4100.0
+Corn Belt,Farm Real Estate,Corn Belt,Region,2013,5880.0
+Illinois,Farm Real Estate,Corn Belt,State,2013,7100.0
+Indiana,Farm Real Estate,Corn Belt,State,2013,6400.0
+Iowa,Farm Real Estate,Corn Belt,State,2013,7700.0
+Missouri,Farm Real Estate,Corn Belt,State,2013,2850.0
+Ohio,Farm Real Estate,Corn Belt,State,2013,5100.0
+Northern Plains,Farm Real Estate,Northern Plains,Region,2013,1960.0
+Kansas,Farm Real Estate,Northern Plains,State,2013,1750.0
+Nebraska,Farm Real Estate,Northern Plains,State,2013,2800.0
+North Dakota,Farm Real Estate,Northern Plains,State,2013,1550.0
+South Dakota,Farm Real Estate,Northern Plains,State,2013,1690.0
+Appalachian,Farm Real Estate,Appalachian,Region,2013,3610.0
+Kentucky,Farm Real Estate,Appalachian,State,2013,3020.0
+North Carolina,Farm Real Estate,Appalachian,State,2013,4340.0
+Tennessee,Farm Real Estate,Appalachian,State,2013,3570.0
+Virginia,Farm Real Estate,Appalachian,State,2013,4310.0
+West Virginia,Farm Real Estate,Appalachian,State,2013,2550.0
+Southeast,Farm Real Estate,Southeast,Region,2013,3590.0
+Alabama,Farm Real Estate,Southeast,State,2013,2500.0
+Florida,Farm Real Estate,Southeast,State,2013,5200.0
+Georgia,Farm Real Estate,Southeast,State,2013,3300.0
+South Carolina,Farm Real Estate,Southeast,State,2013,2980.0
+Delta,Farm Real Estate,Delta States,Region,2013,2520.0
+Arkansas,Farm Real Estate,Delta States,State,2013,2700.0
+Louisiana,Farm Real Estate,Delta States,State,2013,2550.0
+Mississippi,Farm Real Estate,Delta States,State,2013,2270.0
+Southern Plains,Farm Real Estate,Southern Plains,Region,2013,1630.0
+Oklahoma,Farm Real Estate,Southern Plains,State,2013,1450.0
+Texas,Farm Real Estate,Southern Plains,State,2013,1680.0
+Mountain,Farm Real Estate,Mountain,Region,2013,1010.0
+Arizona,Farm Real Estate,Mountain,State,2013,3500.0
+Colorado,Farm Real Estate,Mountain,State,2013,1280.0
+Idaho,Farm Real Estate,Mountain,State,2013,2220.0
+Montana,Farm Real Estate,Mountain,State,2013,790.0
+Nevada,Farm Real Estate,Mountain,State,2013,1040.0
+New Mexico,Farm Real Estate,Mountain,State,2013,500.0
+Utah,Farm Real Estate,Mountain,State,2013,1900.0
+Wyoming,Farm Real Estate,Mountain,State,2013,600.0
+Pacific,Farm Real Estate,Pacific,Region,2013,4290.0
+California,Farm Real Estate,Pacific,State,2013,6900.0
+Oregon,Farm Real Estate,Pacific,State,2013,1970.0
+Washington,Farm Real Estate,Pacific,State,2013,2300.0
+United States,Farm Real Estate,Continental U.S.,Region,2013,2730.0
+Northeast,Farm Real Estate,Northeast,Region,2014,4930.0
+Connecticut,Farm Real Estate,Northeast,State,2014,11200.0
+Delaware,Farm Real Estate,Northeast,State,2014,8180.0
+Maine,Farm Real Estate,Northeast,State,2014,2080.0
+Maryland,Farm Real Estate,Northeast,State,2014,6900.0
+Massachusetts,Farm Real Estate,Northeast,State,2014,10400.0
+New Hampshire,Farm Real Estate,Northeast,State,2014,4280.0
+New Jersey,Farm Real Estate,Northeast,State,2014,12800.0
+New York,Farm Real Estate,Northeast,State,2014,2700.0
+Pennsylvania,Farm Real Estate,Northeast,State,2014,5600.0
+Rhode Island,Farm Real Estate,Northeast,State,2014,13700.0
+Vermont,Farm Real Estate,Northeast,State,2014,3260.0
+Lake,Farm Real Estate,Lake States,Region,2014,4640.0
+Michigan,Farm Real Estate,Lake States,State,2014,4700.0
+Minnesota,Farm Real Estate,Lake States,State,2014,4750.0
+Wisconsin,Farm Real Estate,Lake States,State,2014,4400.0
+Corn Belt,Farm Real Estate,Corn Belt,Region,2014,6370.0
+Illinois,Farm Real Estate,Corn Belt,State,2014,7520.0
+Indiana,Farm Real Estate,Corn Belt,State,2014,6950.0
+Iowa,Farm Real Estate,Corn Belt,State,2014,8500.0
+Missouri,Farm Real Estate,Corn Belt,State,2014,3100.0
+Ohio,Farm Real Estate,Corn Belt,State,2014,5550.0
+Northern Plains,Farm Real Estate,Northern Plains,Region,2014,2280.0
+Kansas,Farm Real Estate,Northern Plains,State,2014,2050.0
+Nebraska,Farm Real Estate,Northern Plains,State,2014,3120.0
+North Dakota,Farm Real Estate,Northern Plains,State,2014,1820.0
+South Dakota,Farm Real Estate,Northern Plains,State,2014,2070.0
+Appalachian,Farm Real Estate,Appalachian,Region,2014,3690.0
+Kentucky,Farm Real Estate,Appalachian,State,2014,3150.0
+North Carolina,Farm Real Estate,Appalachian,State,2014,4510.0
+Tennessee,Farm Real Estate,Appalachian,State,2014,3600.0
+Virginia,Farm Real Estate,Appalachian,State,2014,4320.0
+West Virginia,Farm Real Estate,Appalachian,State,2014,2560.0
+Southeast,Farm Real Estate,Southeast,Region,2014,3630.0
+Alabama,Farm Real Estate,Southeast,State,2014,2600.0
+Florida,Farm Real Estate,Southeast,State,2014,5250.0
+Georgia,Farm Real Estate,Southeast,State,2014,3300.0
+South Carolina,Farm Real Estate,Southeast,State,2014,3010.0
+Delta,Farm Real Estate,Delta States,Region,2014,2640.0
+Arkansas,Farm Real Estate,Delta States,State,2014,2850.0
+Louisiana,Farm Real Estate,Delta States,State,2014,2670.0
+Mississippi,Farm Real Estate,Delta States,State,2014,2340.0
+Southern Plains,Farm Real Estate,Southern Plains,Region,2014,1790.0
+Oklahoma,Farm Real Estate,Southern Plains,State,2014,1580.0
+Texas,Farm Real Estate,Southern Plains,State,2014,1850.0
+Mountain,Farm Real Estate,Mountain,Region,2014,1070.0
+Arizona,Farm Real Estate,Mountain,State,2014,3740.0
+Colorado,Farm Real Estate,Mountain,State,2014,1350.0
+Idaho,Farm Real Estate,Mountain,State,2014,2360.0
+Montana,Farm Real Estate,Mountain,State,2014,860.0
+Nevada,Farm Real Estate,Mountain,State,2014,1080.0
+New Mexico,Farm Real Estate,Mountain,State,2014,520.0
+Utah,Farm Real Estate,Mountain,State,2014,2030.0
+Wyoming,Farm Real Estate,Mountain,State,2014,630.0
+Pacific,Farm Real Estate,Pacific,Region,2014,4520.0
+California,Farm Real Estate,Pacific,State,2014,7300.0
+Oregon,Farm Real Estate,Pacific,State,2014,2050.0
+Washington,Farm Real Estate,Pacific,State,2014,2500.0
+United States,Farm Real Estate,Continental U.S.,Region,2014,2950.0
+Northeast,Farm Real Estate,Northeast,Region,2015,5020.0
+Connecticut,Farm Real Estate,Northeast,State,2015,11300.0
+Delaware,Farm Real Estate,Northeast,State,2015,8180.0
+Maine,Farm Real Estate,Northeast,State,2015,2090.0
+Maryland,Farm Real Estate,Northeast,State,2015,7000.0
+Massachusetts,Farm Real Estate,Northeast,State,2015,10400.0
+New Hampshire,Farm Real Estate,Northeast,State,2015,4280.0
+New Jersey,Farm Real Estate,Northeast,State,2015,13000.0
+New York,Farm Real Estate,Northeast,State,2015,3000.0
+Pennsylvania,Farm Real Estate,Northeast,State,2015,5500.0
+Rhode Island,Farm Real Estate,Northeast,State,2015,13800.0
+Vermont,Farm Real Estate,Northeast,State,2015,3300.0
+Lake,Farm Real Estate,Lake States,Region,2015,4740.0
+Michigan,Farm Real Estate,Lake States,State,2015,4900.0
+Minnesota,Farm Real Estate,Lake States,State,2015,4700.0
+Wisconsin,Farm Real Estate,Lake States,State,2015,4700.0
+Corn Belt,Farm Real Estate,Corn Belt,Region,2015,6350.0
+Illinois,Farm Real Estate,Corn Belt,State,2015,7500.0
+Indiana,Farm Real Estate,Corn Belt,State,2015,7150.0
+Iowa,Farm Real Estate,Corn Belt,State,2015,8000.0
+Missouri,Farm Real Estate,Corn Belt,State,2015,3350.0
+Ohio,Farm Real Estate,Corn Belt,State,2015,5750.0
+Northern Plains,Farm Real Estate,Northern Plains,Region,2015,2340.0
+Kansas,Farm Real Estate,Northern Plains,State,2015,2030.0
+Nebraska,Farm Real Estate,Northern Plains,State,2015,3050.0
+North Dakota,Farm Real Estate,Northern Plains,State,2015,1920.0
+South Dakota,Farm Real Estate,Northern Plains,State,2015,2320.0
+Appalachian,Farm Real Estate,Appalachian,Region,2015,3730.0
+Kentucky,Farm Real Estate,Appalachian,State,2015,3250.0
+North Carolina,Farm Real Estate,Appalachian,State,2015,4500.0
+Tennessee,Farm Real Estate,Appalachian,State,2015,3650.0
+Virginia,Farm Real Estate,Appalachian,State,2015,4320.0
+West Virginia,Farm Real Estate,Appalachian,State,2015,2600.0
+Southeast,Farm Real Estate,Southeast,Region,2015,3670.0
+Alabama,Farm Real Estate,Southeast,State,2015,2630.0
+Florida,Farm Real Estate,Southeast,State,2015,5400.0
+Georgia,Farm Real Estate,Southeast,State,2015,3270.0
+South Carolina,Farm Real Estate,Southeast,State,2015,3010.0
+Delta,Farm Real Estate,Delta States,Region,2015,2780.0
+Arkansas,Farm Real Estate,Delta States,State,2015,3050.0
+Louisiana,Farm Real Estate,Delta States,State,2015,2800.0
+Mississippi,Farm Real Estate,Delta States,State,2015,2420.0
+Southern Plains,Farm Real Estate,Southern Plains,Region,2015,1890.0
+Oklahoma,Farm Real Estate,Southern Plains,State,2015,1700.0
+Texas,Farm Real Estate,Southern Plains,State,2015,1940.0
+Mountain,Farm Real Estate,Mountain,Region,2015,1100.0
+Arizona,Farm Real Estate,Mountain,State,2015,3780.0
+Colorado,Farm Real Estate,Mountain,State,2015,1440.0
+Idaho,Farm Real Estate,Mountain,State,2015,2470.0
+Montana,Farm Real Estate,Mountain,State,2015,890.0
+Nevada,Farm Real Estate,Mountain,State,2015,1130.0
+New Mexico,Farm Real Estate,Mountain,State,2015,510.0
+Utah,Farm Real Estate,Mountain,State,2015,2050.0
+Wyoming,Farm Real Estate,Mountain,State,2015,660.0
+Pacific,Farm Real Estate,Pacific,Region,2015,4780.0
+California,Farm Real Estate,Pacific,State,2015,7700.0
+Oregon,Farm Real Estate,Pacific,State,2015,2120.0
+Washington,Farm Real Estate,Pacific,State,2015,2700.0
+United States,Farm Real Estate,Continental U.S.,Region,2015,3020.0
+Northeast,Farm Real Estate,Northeast,Region,2016,5010.0
+Connecticut,Farm Real Estate,Northeast,State,2016,11200.0
+Delaware,Farm Real Estate,Northeast,State,2016,8400.0
+Maine,Farm Real Estate,Northeast,State,2016,2090.0
+Maryland,Farm Real Estate,Northeast,State,2016,7060.0
+Massachusetts,Farm Real Estate,Northeast,State,2016,10400.0
+New Hampshire,Farm Real Estate,Northeast,State,2016,4350.0
+New Jersey,Farm Real Estate,Northeast,State,2016,12800.0
+New York,Farm Real Estate,Northeast,State,2016,2980.0
+Pennsylvania,Farm Real Estate,Northeast,State,2016,5500.0
+Rhode Island,Farm Real Estate,Northeast,State,2016,13800.0
+Vermont,Farm Real Estate,Northeast,State,2016,3320.0
+Lake,Farm Real Estate,Lake States,Region,2016,4730.0
+Michigan,Farm Real Estate,Lake States,State,2016,4800.0
+Minnesota,Farm Real Estate,Lake States,State,2016,4700.0
+Wisconsin,Farm Real Estate,Lake States,State,2016,4750.0
+Corn Belt,Farm Real Estate,Corn Belt,Region,2016,6290.0
+Illinois,Farm Real Estate,Corn Belt,State,2016,7400.0
+Indiana,Farm Real Estate,Corn Belt,State,2016,7150.0
+Iowa,Farm Real Estate,Corn Belt,State,2016,7850.0
+Missouri,Farm Real Estate,Corn Belt,State,2016,3400.0
+Ohio,Farm Real Estate,Corn Belt,State,2016,5700.0
+Northern Plains,Farm Real Estate,Northern Plains,Region,2016,2240.0
+Kansas,Farm Real Estate,Northern Plains,State,2016,1880.0
+Nebraska,Farm Real Estate,Northern Plains,State,2016,2950.0
+North Dakota,Farm Real Estate,Northern Plains,State,2016,1830.0
+South Dakota,Farm Real Estate,Northern Plains,State,2016,2250.0
+Appalachian,Farm Real Estate,Appalachian,Region,2016,3760.0
+Kentucky,Farm Real Estate,Appalachian,State,2016,3350.0
+North Carolina,Farm Real Estate,Appalachian,State,2016,4450.0
+Tennessee,Farm Real Estate,Appalachian,State,2016,3700.0
+Virginia,Farm Real Estate,Appalachian,State,2016,4300.0
+West Virginia,Farm Real Estate,Appalachian,State,2016,2570.0
+Southeast,Farm Real Estate,Southeast,Region,2016,3730.0
+Alabama,Farm Real Estate,Southeast,State,2016,2700.0
+Florida,Farm Real Estate,Southeast,State,2016,5400.0
+Georgia,Farm Real Estate,Southeast,State,2016,3400.0
+South Carolina,Farm Real Estate,Southeast,State,2016,3000.0
+Delta,Farm Real Estate,Delta States,Region,2016,2820.0
+Arkansas,Farm Real Estate,Delta States,State,2016,3050.0
+Louisiana,Farm Real Estate,Delta States,State,2016,2900.0
+Mississippi,Farm Real Estate,Delta States,State,2016,2470.0
+Southern Plains,Farm Real Estate,Southern Plains,Region,2016,1930.0
+Oklahoma,Farm Real Estate,Southern Plains,State,2016,1800.0
+Texas,Farm Real Estate,Southern Plains,State,2016,1960.0
+Mountain,Farm Real Estate,Mountain,Region,2016,1110.0
+Arizona,Farm Real Estate,Mountain,State,2016,3800.0
+Colorado,Farm Real Estate,Mountain,State,2016,1420.0
+Idaho,Farm Real Estate,Mountain,State,2016,2500.0
+Montana,Farm Real Estate,Mountain,State,2016,900.0
+Nevada,Farm Real Estate,Mountain,State,2016,1110.0
+New Mexico,Farm Real Estate,Mountain,State,2016,520.0
+Utah,Farm Real Estate,Mountain,State,2016,2040.0
+Wyoming,Farm Real Estate,Mountain,State,2016,660.0
+Pacific,Farm Real Estate,Pacific,Region,2016,4940.0
+California,Farm Real Estate,Pacific,State,2016,7900.0
+Oregon,Farm Real Estate,Pacific,State,2016,2200.0
+Washington,Farm Real Estate,Pacific,State,2016,2850.0
+United States,Farm Real Estate,Continental U.S.,Region,2016,3010.0
+Northeast,Farm Real Estate,Northeast,Region,2017,5050.0
+Connecticut,Farm Real Estate,Northeast,State,2017,11200.0
+Delaware,Farm Real Estate,Northeast,State,2017,8400.0
+Maine,Farm Real Estate,Northeast,State,2017,2200.0
+Maryland,Farm Real Estate,Northeast,State,2017,7060.0
+Massachusetts,Farm Real Estate,Northeast,State,2017,10400.0
+New Hampshire,Farm Real Estate,Northeast,State,2017,4500.0
+New Jersey,Farm Real Estate,Northeast,State,2017,12800.0
+New York,Farm Real Estate,Northeast,State,2017,2980.0
+Pennsylvania,Farm Real Estate,Northeast,State,2017,5600.0
+Rhode Island,Farm Real Estate,Northeast,State,2017,13800.0
+Vermont,Farm Real Estate,Northeast,State,2017,3360.0
+Lake,Farm Real Estate,Lake States,Region,2017,4890.0
+Michigan,Farm Real Estate,Lake States,State,2017,4800.0
+Minnesota,Farm Real Estate,Lake States,State,2017,4750.0
+Wisconsin,Farm Real Estate,Lake States,State,2017,5200.0
+Corn Belt,Farm Real Estate,Corn Belt,Region,2017,6260.0
+Illinois,Farm Real Estate,Corn Belt,State,2017,7300.0
+Indiana,Farm Real Estate,Corn Belt,State,2017,7000.0
+Iowa,Farm Real Estate,Corn Belt,State,2017,8000.0
+Missouri,Farm Real Estate,Corn Belt,State,2017,3350.0
+Ohio,Farm Real Estate,Corn Belt,State,2017,5650.0
+Northern Plains,Farm Real Estate,Northern Plains,Region,2017,2200.0
+Kansas,Farm Real Estate,Northern Plains,State,2017,1850.0
+Nebraska,Farm Real Estate,Northern Plains,State,2017,2900.0
+North Dakota,Farm Real Estate,Northern Plains,State,2017,1840.0
+South Dakota,Farm Real Estate,Northern Plains,State,2017,2180.0
+Appalachian,Farm Real Estate,Appalachian,Region,2017,3800.0
+Kentucky,Farm Real Estate,Appalachian,State,2017,3420.0
+North Carolina,Farm Real Estate,Appalachian,State,2017,4450.0
+Tennessee,Farm Real Estate,Appalachian,State,2017,3750.0
+Virginia,Farm Real Estate,Appalachian,State,2017,4350.0
+West Virginia,Farm Real Estate,Appalachian,State,2017,2570.0
+Southeast,Farm Real Estate,Southeast,Region,2017,3870.0
+Alabama,Farm Real Estate,Southeast,State,2017,2750.0
+Florida,Farm Real Estate,Southeast,State,2017,5700.0
+Georgia,Farm Real Estate,Southeast,State,2017,3550.0
+South Carolina,Farm Real Estate,Southeast,State,2017,3000.0
+Delta,Farm Real Estate,Delta States,Region,2017,2910.0
+Arkansas,Farm Real Estate,Delta States,State,2017,3180.0
+Louisiana,Farm Real Estate,Delta States,State,2017,3000.0
+Mississippi,Farm Real Estate,Delta States,State,2017,2500.0
+Southern Plains,Farm Real Estate,Southern Plains,Region,2017,2050.0
+Oklahoma,Farm Real Estate,Southern Plains,State,2017,1900.0
+Texas,Farm Real Estate,Southern Plains,State,2017,2090.0
+Mountain,Farm Real Estate,Mountain,Region,2017,1130.0
+Arizona,Farm Real Estate,Mountain,State,2017,4100.0
+Colorado,Farm Real Estate,Mountain,State,2017,1430.0
+Idaho,Farm Real Estate,Mountain,State,2017,2600.0
+Montana,Farm Real Estate,Mountain,State,2017,920.0
+Nevada,Farm Real Estate,Mountain,State,2017,1110.0
+New Mexico,Farm Real Estate,Mountain,State,2017,530.0
+Utah,Farm Real Estate,Mountain,State,2017,2070.0
+Wyoming,Farm Real Estate,Mountain,State,2017,660.0
+Pacific,Farm Real Estate,Pacific,Region,2017,5370.0
+California,Farm Real Estate,Pacific,State,2017,8700.0
+Oregon,Farm Real Estate,Pacific,State,2017,2310.0
+Washington,Farm Real Estate,Pacific,State,2017,3000.0
+United States,Farm Real Estate,Continental U.S.,Region,2017,3080.0
+Northeast,Cropland,Northeast,Region,2007,5350.0
+Delaware,Cropland,Northeast,State,2007,10200.0
+Maryland,Cropland,Northeast,State,2007,8400.0
+New Jersey,Cropland,Northeast,State,2007,16000.0
+New York,Cropland,Northeast,State,2007,1900.0
+Pennsylvania,Cropland,Northeast,State,2007,5330.0
+Other States,Cropland,Northeast,State,2007,7690.0
+Lake,Cropland,Lake States,Region,2007,2830.0
+Michigan,Cropland,Lake States,State,2007,3280.0
+Minnesota,Cropland,Lake States,State,2007,2420.0
+Wisconsin,Cropland,Lake States,State,2007,3370.0
+Corn Belt,Cropland,Corn Belt,Region,2007,3530.0
+Illinois,Cropland,Corn Belt,State,2007,4150.0
+Indiana,Cropland,Corn Belt,State,2007,3640.0
+Iowa,Cropland,Corn Belt,State,2007,3600.0
+Missouri,Cropland,Corn Belt,State,2007,2330.0
+Ohio,Cropland,Corn Belt,State,2007,3820.0
+Northern Plains,Cropland,Northern Plains,Region,2007,1090.0
+Kansas,Cropland,Northern Plains,State,2007,914.0
+Nebraska,Cropland,Northern Plains,State,2007,1760.0
+North Dakota,Cropland,Northern Plains,State,2007,670.0
+South Dakota,Cropland,Northern Plains,State,2007,1180.0
+Appalachian,Cropland,Appalachian,Region,2007,3570.0
+Kentucky,Cropland,Appalachian,State,2007,2930.0
+North Carolina,Cropland,Appalachian,State,2007,3720.0
+Tennessee,Cropland,Appalachian,State,2007,3200.0
+Virginia,Cropland,Appalachian,State,2007,5250.0
+West Virginia,Cropland,Appalachian,State,2007,3600.0
+Southeast,Cropland,Southeast,Region,2007,4180.0
+Alabama,Cropland,Southeast,State,2007,2450.0
+Florida,Cropland,Southeast,State,2007,6860.0
+Georgia,Cropland,Southeast,State,2007,4290.0
+South Carolina,Cropland,Southeast,State,2007,2430.0
+Delta,Cropland,Delta States,Region,2007,1690.0
+Arkansas,Cropland,Delta States,State,2007,1680.0
+Louisiana,Cropland,Delta States,State,2007,1690.0
+Mississippi,Cropland,Delta States,State,2007,1710.0
+Southern Plains,Cropland,Southern Plains,Region,2007,1250.0
+Oklahoma,Cropland,Southern Plains,State,2007,979.0
+Texas,Cropland,Southern Plains,State,2007,1360.0
+Mountain,Cropland,Mountain,Region,2007,1640.0
+Arizona,Cropland,Mountain,State,2007,10800.0
+Colorado,Cropland,Mountain,State,2007,1270.0
+Idaho,Cropland,Mountain,State,2007,2770.0
+Montana,Cropland,Mountain,State,2007,784.0
+Nevada,Cropland,Mountain,State,2007,2720.0
+New Mexico,Cropland,Mountain,State,2007,1570.0
+Utah,Cropland,Mountain,State,2007,2940.0
+Wyoming,Cropland,Mountain,State,2007,1150.0
+Pacific,Cropland,Pacific,Region,2007,5420.0
+California,Cropland,Pacific,State,2007,9700.0
+Oregon,Cropland,Pacific,State,2007,2280.0
+Washington,Cropland,Pacific,State,2007,1700.0
+United States,Cropland,Continental U.S.,Region,2007,2530.0
+Northeast,Cropland,Northeast,Region,2008,5590.0
+Delaware,Cropland,Northeast,State,2008,9800.0
+Maryland,Cropland,Northeast,State,2008,7800.0
+New Jersey,Cropland,Northeast,State,2008,15600.0
+New York,Cropland,Northeast,State,2008,2150.0
+Pennsylvania,Cropland,Northeast,State,2008,6000.0
+Other States,Cropland,Northeast,State,2008,7930.0
+Lake,Cropland,Lake States,Region,2008,3080.0
+Michigan,Cropland,Lake States,State,2008,3480.0
+Minnesota,Cropland,Lake States,State,2008,2700.0
+Wisconsin,Cropland,Lake States,State,2008,3600.0
+Corn Belt,Cropland,Corn Belt,Region,2008,4030.0
+Illinois,Cropland,Corn Belt,State,2008,4850.0
+Indiana,Cropland,Corn Belt,State,2008,4140.0
+Iowa,Cropland,Corn Belt,State,2008,4260.0
+Missouri,Cropland,Corn Belt,State,2008,2500.0
+Ohio,Cropland,Corn Belt,State,2008,4140.0
+Northern Plains,Cropland,Northern Plains,Region,2008,1280.0
+Kansas,Cropland,Northern Plains,State,2008,1020.0
+Nebraska,Cropland,Northern Plains,State,2008,2050.0
+North Dakota,Cropland,Northern Plains,State,2008,810.0
+South Dakota,Cropland,Northern Plains,State,2008,1400.0
+Appalachian,Cropland,Appalachian,Region,2008,3730.0
+Kentucky,Cropland,Appalachian,State,2008,3100.0
+North Carolina,Cropland,Appalachian,State,2008,3850.0
+Tennessee,Cropland,Appalachian,State,2008,3400.0
+Virginia,Cropland,Appalachian,State,2008,5350.0
+West Virginia,Cropland,Appalachian,State,2008,3800.0
+Southeast,Cropland,Southeast,Region,2008,4380.0
+Alabama,Cropland,Southeast,State,2008,2650.0
+Florida,Cropland,Southeast,State,2008,6980.0
+Georgia,Cropland,Southeast,State,2008,4540.0
+South Carolina,Cropland,Southeast,State,2008,2610.0
+Delta,Cropland,Delta States,Region,2008,1800.0
+Arkansas,Cropland,Delta States,State,2008,1770.0
+Louisiana,Cropland,Delta States,State,2008,1830.0
+Mississippi,Cropland,Delta States,State,2008,1810.0
+Southern Plains,Cropland,Southern Plains,Region,2008,1390.0
+Oklahoma,Cropland,Southern Plains,State,2008,1110.0
+Texas,Cropland,Southern Plains,State,2008,1500.0
+Mountain,Cropland,Mountain,Region,2008,1670.0
+Arizona,Cropland,Mountain,State,2008,11500.0
+Colorado,Cropland,Mountain,State,2008,1310.0
+Idaho,Cropland,Mountain,State,2008,2800.0
+Montana,Cropland,Mountain,State,2008,811.0
+Nevada,Cropland,Mountain,State,2008,2740.0
+New Mexico,Cropland,Mountain,State,2008,1630.0
+Utah,Cropland,Mountain,State,2008,2700.0
+Wyoming,Cropland,Mountain,State,2008,1180.0
+Pacific,Cropland,Pacific,Region,2008,5570.0
+California,Cropland,Pacific,State,2008,9880.0
+Oregon,Cropland,Pacific,State,2008,2380.0
+Washington,Cropland,Pacific,State,2008,1830.0
+United States,Cropland,Continental U.S.,Region,2008,2760.0
+Northeast,Cropland,Northeast,Region,2009,5340.0
+Delaware,Cropland,Northeast,State,2009,8500.0
+Maryland,Cropland,Northeast,State,2009,7300.0
+New Jersey,Cropland,Northeast,State,2009,14000.0
+New York,Cropland,Northeast,State,2009,2200.0
+Pennsylvania,Cropland,Northeast,State,2009,5700.0
+Other States,Cropland,Northeast,State,2009,7570.0
+Lake,Cropland,Lake States,Region,2009,3020.0
+Michigan,Cropland,Lake States,State,2009,3370.0
+Minnesota,Cropland,Lake States,State,2009,2610.0
+Wisconsin,Cropland,Lake States,State,2009,3650.0
+Corn Belt,Cropland,Corn Belt,Region,2009,3910.0
+Illinois,Cropland,Corn Belt,State,2009,4670.0
+Indiana,Cropland,Corn Belt,State,2009,3950.0
+Iowa,Cropland,Corn Belt,State,2009,4050.0
+Missouri,Cropland,Corn Belt,State,2009,2540.0
+Ohio,Cropland,Corn Belt,State,2009,3900.0
+Northern Plains,Cropland,Northern Plains,Region,2009,1300.0
+Kansas,Cropland,Northern Plains,State,2009,1050.0
+Nebraska,Cropland,Northern Plains,State,2009,2180.0
+North Dakota,Cropland,Northern Plains,State,2009,800.0
+South Dakota,Cropland,Northern Plains,State,2009,1400.0
+Appalachian,Cropland,Appalachian,Region,2009,3600.0
+Kentucky,Cropland,Appalachian,State,2009,3150.0
+North Carolina,Cropland,Appalachian,State,2009,3770.0
+Tennessee,Cropland,Appalachian,State,2009,3270.0
+Virginia,Cropland,Appalachian,State,2009,5000.0
+West Virginia,Cropland,Appalachian,State,2009,3500.0
+Southeast,Cropland,Southeast,Region,2009,3960.0
+Alabama,Cropland,Southeast,State,2009,2500.0
+Florida,Cropland,Southeast,State,2009,6430.0
+Georgia,Cropland,Southeast,State,2009,4050.0
+South Carolina,Cropland,Southeast,State,2009,2500.0
+Delta,Cropland,Delta States,Region,2009,1810.0
+Arkansas,Cropland,Delta States,State,2009,1860.0
+Louisiana,Cropland,Delta States,State,2009,1740.0
+Mississippi,Cropland,Delta States,State,2009,1810.0
+Southern Plains,Cropland,Southern Plains,Region,2009,1380.0
+Oklahoma,Cropland,Southern Plains,State,2009,1130.0
+Texas,Cropland,Southern Plains,State,2009,1480.0
+Mountain,Cropland,Mountain,Region,2009,1610.0
+Arizona,Cropland,Mountain,State,2009,10000.0
+Colorado,Cropland,Mountain,State,2009,1300.0
+Idaho,Cropland,Mountain,State,2009,2610.0
+Montana,Cropland,Mountain,State,2009,787.0
+Nevada,Cropland,Mountain,State,2009,2700.0
+New Mexico,Cropland,Mountain,State,2009,1810.0
+Utah,Cropland,Mountain,State,2009,2810.0
+Wyoming,Cropland,Mountain,State,2009,1177.0
+Pacific,Cropland,Pacific,Region,2009,5210.0
+California,Cropland,Pacific,State,2009,9480.0
+Oregon,Cropland,Pacific,State,2009,2340.0
+Washington,Cropland,Pacific,State,2009,1790.0
+United States,Cropland,Continental U.S.,Region,2009,2670.0
+Northeast,Cropland,Northeast,Region,2010,5270.0
+Delaware,Cropland,Northeast,State,2010,7930.0
+Maryland,Cropland,Northeast,State,2010,6790.0
+New Jersey,Cropland,Northeast,State,2010,13300.0
+New York,Cropland,Northeast,State,2010,2400.0
+Pennsylvania,Cropland,Northeast,State,2010,5710.0
+Other States,Cropland,Northeast,State,2010,7220.0
+Lake,Cropland,Lake States,Region,2010,3010.0
+Michigan,Cropland,Lake States,State,2010,3160.0
+Minnesota,Cropland,Lake States,State,2010,2710.0
+Wisconsin,Cropland,Lake States,State,2010,3550.0
+Corn Belt,Cropland,Corn Belt,Region,2010,4090.0
+Illinois,Cropland,Corn Belt,State,2010,4720.0
+Indiana,Cropland,Corn Belt,State,2010,4270.0
+Iowa,Cropland,Corn Belt,State,2010,4450.0
+Missouri,Cropland,Corn Belt,State,2010,2600.0
+Ohio,Cropland,Corn Belt,State,2010,3900.0
+Northern Plains,Cropland,Northern Plains,Region,2010,1410.0
+Kansas,Cropland,Northern Plains,State,2010,1110.0
+Nebraska,Cropland,Northern Plains,State,2010,2430.0
+North Dakota,Cropland,Northern Plains,State,2010,840.0
+South Dakota,Cropland,Northern Plains,State,2010,1520.0
+Appalachian,Cropland,Appalachian,Region,2010,3490.0
+Kentucky,Cropland,Appalachian,State,2010,3070.0
+North Carolina,Cropland,Appalachian,State,2010,3650.0
+Tennessee,Cropland,Appalachian,State,2010,3310.0
+Virginia,Cropland,Appalachian,State,2010,4600.0
+West Virginia,Cropland,Appalachian,State,2010,3300.0
+Southeast,Cropland,Southeast,Region,2010,3800.0
+Alabama,Cropland,Southeast,State,2010,2630.0
+Florida,Cropland,Southeast,State,2010,6550.0
+Georgia,Cropland,Southeast,State,2010,3390.0
+South Carolina,Cropland,Southeast,State,2010,2560.0
+Delta,Cropland,Delta States,Region,2010,1890.0
+Arkansas,Cropland,Delta States,State,2010,1910.0
+Louisiana,Cropland,Delta States,State,2010,1800.0
+Mississippi,Cropland,Delta States,State,2010,1950.0
+Southern Plains,Cropland,Southern Plains,Region,2010,1400.0
+Oklahoma,Cropland,Southern Plains,State,2010,1130.0
+Texas,Cropland,Southern Plains,State,2010,1510.0
+Mountain,Cropland,Mountain,Region,2010,1520.0
+Arizona,Cropland,Mountain,State,2010,7750.0
+Colorado,Cropland,Mountain,State,2010,1290.0
+Idaho,Cropland,Mountain,State,2010,2480.0
+Montana,Cropland,Mountain,State,2010,779.0
+Nevada,Cropland,Mountain,State,2010,
+New Mexico,Cropland,Mountain,State,2010,1750.0
+Utah,Cropland,Mountain,State,2010,2720.0
+Wyoming,Cropland,Mountain,State,2010,1230.0
+Pacific,Cropland,Pacific,Region,2010,4980.0
+California,Cropland,Pacific,State,2010,8960.0
+Oregon,Cropland,Pacific,State,2010,2210.0
+Washington,Cropland,Pacific,State,2010,1870.0
+United States,Cropland,Continental U.S.,Region,2010,2700.0
+Northeast,Cropland,Northeast,Region,2011,5200.0
+Delaware,Cropland,Northeast,State,2011,7840.0
+Maryland,Cropland,Northeast,State,2011,6680.0
+New Jersey,Cropland,Northeast,State,2011,12900.0
+New York,Cropland,Northeast,State,2011,2400.0
+Pennsylvania,Cropland,Northeast,State,2011,5630.0
+Other States,Cropland,Northeast,State,2011,7170.0
+Lake,Cropland,Lake States,Region,2011,3310.0
+Michigan,Cropland,Lake States,State,2011,3370.0
+Minnesota,Cropland,Lake States,State,2011,3070.0
+Wisconsin,Cropland,Lake States,State,2011,3780.0
+Corn Belt,Cropland,Corn Belt,Region,2011,4810.0
+Illinois,Cropland,Corn Belt,State,2011,5480.0
+Indiana,Cropland,Corn Belt,State,2011,5070.0
+Iowa,Cropland,Corn Belt,State,2011,5600.0
+Missouri,Cropland,Corn Belt,State,2011,2790.0
+Ohio,Cropland,Corn Belt,State,2011,4160.0
+Northern Plains,Cropland,Northern Plains,Region,2011,1730.0
+Kansas,Cropland,Northern Plains,State,2011,1340.0
+Nebraska,Cropland,Northern Plains,State,2011,3130.0
+North Dakota,Cropland,Northern Plains,State,2011,987.0
+South Dakota,Cropland,Northern Plains,State,2011,1790.0
+Appalachian,Cropland,Appalachian,Region,2011,3440.0
+Kentucky,Cropland,Appalachian,State,2011,3080.0
+North Carolina,Cropland,Appalachian,State,2011,3610.0
+Tennessee,Cropland,Appalachian,State,2011,3270.0
+Virginia,Cropland,Appalachian,State,2011,4350.0
+West Virginia,Cropland,Appalachian,State,2011,3340.0
+Southeast,Cropland,Southeast,Region,2011,3810.0
+Alabama,Cropland,Southeast,State,2011,2680.0
+Florida,Cropland,Southeast,State,2011,6580.0
+Georgia,Cropland,Southeast,State,2011,3360.0
+South Carolina,Cropland,Southeast,State,2011,2590.0
+Delta,Cropland,Delta States,Region,2011,2020.0
+Arkansas,Cropland,Delta States,State,2011,1990.0
+Louisiana,Cropland,Delta States,State,2011,1970.0
+Mississippi,Cropland,Delta States,State,2011,2100.0
+Southern Plains,Cropland,Southern Plains,Region,2011,1450.0
+Oklahoma,Cropland,Southern Plains,State,2011,1130.0
+Texas,Cropland,Southern Plains,State,2011,1580.0
+Mountain,Cropland,Mountain,Region,2011,1540.0
+Arizona,Cropland,Mountain,State,2011,7610.0
+Colorado,Cropland,Mountain,State,2011,1340.0
+Idaho,Cropland,Mountain,State,2011,2470.0
+Montana,Cropland,Mountain,State,2011,806.0
+Nevada,Cropland,Mountain,State,2011,
+New Mexico,Cropland,Mountain,State,2011,1740.0
+Utah,Cropland,Mountain,State,2011,2690.0
+Wyoming,Cropland,Mountain,State,2011,1320.0
+Pacific,Cropland,Pacific,Region,2011,5070.0
+California,Cropland,Pacific,State,2011,9130.0
+Oregon,Cropland,Pacific,State,2011,2180.0
+Washington,Cropland,Pacific,State,2011,1930.0
+United States,Cropland,Continental U.S.,Region,2011,2980.0
+Northeast,Cropland,Northeast,Region,2012,5280.0
+Delaware,Cropland,Northeast,State,2012,7850.0
+Maryland,Cropland,Northeast,State,2012,6570.0
+New Jersey,Cropland,Northeast,State,2012,12400.0
+New York,Cropland,Northeast,State,2012,2600.0
+Pennsylvania,Cropland,Northeast,State,2012,5760.0
+Other States,Cropland,Northeast,State,2012,7120.0
+Lake,Cropland,Lake States,Region,2012,3790.0
+Michigan,Cropland,Lake States,State,2012,3660.0
+Minnesota,Cropland,Lake States,State,2012,3740.0
+Wisconsin,Cropland,Lake States,State,2012,4000.0
+Corn Belt,Cropland,Corn Belt,Region,2012,5600.0
+Illinois,Cropland,Corn Belt,State,2012,6300.0
+Indiana,Cropland,Corn Belt,State,2012,5840.0
+Iowa,Cropland,Corn Belt,State,2012,6810.0
+Missouri,Cropland,Corn Belt,State,2012,3120.0
+Ohio,Cropland,Corn Belt,State,2012,4640.0
+Northern Plains,Cropland,Northern Plains,Region,2012,2210.0
+Kansas,Cropland,Northern Plains,State,2012,1650.0
+Nebraska,Cropland,Northern Plains,State,2012,4190.0
+North Dakota,Cropland,Northern Plains,State,2012,1260.0
+South Dakota,Cropland,Northern Plains,State,2012,2200.0
+Appalachian,Cropland,Appalachian,Region,2012,3550.0
+Kentucky,Cropland,Appalachian,State,2012,3210.0
+North Carolina,Cropland,Appalachian,State,2012,3850.0
+Tennessee,Cropland,Appalachian,State,2012,3260.0
+Virginia,Cropland,Appalachian,State,2012,4500.0
+West Virginia,Cropland,Appalachian,State,2012,3250.0
+Southeast,Cropland,Southeast,Region,2012,3710.0
+Alabama,Cropland,Southeast,State,2012,2750.0
+Florida,Cropland,Southeast,State,2012,6420.0
+Georgia,Cropland,Southeast,State,2012,3130.0
+South Carolina,Cropland,Southeast,State,2012,2620.0
+Delta,Cropland,Delta States,Region,2012,2160.0
+Arkansas,Cropland,Delta States,State,2012,2180.0
+Louisiana,Cropland,Delta States,State,2012,2120.0
+Mississippi,Cropland,Delta States,State,2012,2180.0
+Southern Plains,Cropland,Southern Plains,Region,2012,1500.0
+Oklahoma,Cropland,Southern Plains,State,2012,1280.0
+Texas,Cropland,Southern Plains,State,2012,1590.0
+Mountain,Cropland,Mountain,Region,2012,1600.0
+Arizona,Cropland,Mountain,State,2012,7960.0
+Colorado,Cropland,Mountain,State,2012,1450.0
+Idaho,Cropland,Mountain,State,2012,2580.0
+Montana,Cropland,Mountain,State,2012,852.0
+Nevada,Cropland,Mountain,State,2012,
+New Mexico,Cropland,Mountain,State,2012,1550.0
+Utah,Cropland,Mountain,State,2012,2690.0
+Wyoming,Cropland,Mountain,State,2012,1360.0
+Pacific,Cropland,Pacific,Region,2012,5310.0
+California,Cropland,Pacific,State,2012,9400.0
+Oregon,Cropland,Pacific,State,2012,2340.0
+Washington,Cropland,Pacific,State,2012,2190.0
+United States,Cropland,Continental U.S.,Region,2012,3350.0
+Northeast,Cropland,Northeast,Region,2013,5260.0
+Delaware,Cropland,Northeast,State,2013,7870.0
+Maryland,Cropland,Northeast,State,2013,6470.0
+New Jersey,Cropland,Northeast,State,2013,12900.0
+New York,Cropland,Northeast,State,2013,2550.0
+Pennsylvania,Cropland,Northeast,State,2013,5840.0
+Other States,Cropland,Northeast,State,2013,7060.0
+Lake,Cropland,Lake States,Region,2013,4240.0
+Michigan,Cropland,Lake States,State,2013,4120.0
+Minnesota,Cropland,Lake States,State,2013,4390.0
+Wisconsin,Cropland,Lake States,State,2013,4010.0
+Corn Belt,Cropland,Corn Belt,Region,2013,6470.0
+Illinois,Cropland,Corn Belt,State,2013,7190.0
+Indiana,Cropland,Corn Belt,State,2013,6590.0
+Iowa,Cropland,Corn Belt,State,2013,8000.0
+Missouri,Cropland,Corn Belt,State,2013,3500.0
+Ohio,Cropland,Corn Belt,State,2013,5190.0
+Northern Plains,Cropland,Northern Plains,Region,2013,2720.0
+Kansas,Cropland,Northern Plains,State,2013,1930.0
+Nebraska,Cropland,Northern Plains,State,2013,4860.0
+North Dakota,Cropland,Northern Plains,State,2013,1750.0
+South Dakota,Cropland,Northern Plains,State,2013,2840.0
+Appalachian,Cropland,Appalachian,Region,2013,3690.0
+Kentucky,Cropland,Appalachian,State,2013,3430.0
+North Carolina,Cropland,Appalachian,State,2013,4050.0
+Tennessee,Cropland,Appalachian,State,2013,3340.0
+Virginia,Cropland,Appalachian,State,2013,4450.0
+West Virginia,Cropland,Appalachian,State,2013,3200.0
+Southeast,Cropland,Southeast,Region,2013,3690.0
+Alabama,Cropland,Southeast,State,2013,2750.0
+Florida,Cropland,Southeast,State,2013,6450.0
+Georgia,Cropland,Southeast,State,2013,3080.0
+South Carolina,Cropland,Southeast,State,2013,2440.0
+Delta,Cropland,Delta States,Region,2013,2380.0
+Arkansas,Cropland,Delta States,State,2013,2380.0
+Louisiana,Cropland,Delta States,State,2013,2260.0
+Mississippi,Cropland,Delta States,State,2013,2470.0
+Southern Plains,Cropland,Southern Plains,Region,2013,1480.0
+Oklahoma,Cropland,Southern Plains,State,2013,1390.0
+Texas,Cropland,Southern Plains,State,2013,1520.0
+Mountain,Cropland,Mountain,Region,2013,1780.0
+Arizona,Cropland,Mountain,State,2013,8290.0
+Colorado,Cropland,Mountain,State,2013,1770.0
+Idaho,Cropland,Mountain,State,2013,2850.0
+Montana,Cropland,Mountain,State,2013,890.0
+Nevada,Cropland,Mountain,State,2013,
+New Mexico,Cropland,Mountain,State,2013,1450.0
+Utah,Cropland,Mountain,State,2013,3230.0
+Wyoming,Cropland,Mountain,State,2013,1360.0
+Pacific,Cropland,Pacific,Region,2013,5690.0
+California,Cropland,Pacific,State,2013,9860.0
+Oregon,Cropland,Pacific,State,2013,2400.0
+Washington,Cropland,Pacific,State,2013,2420.0
+United States,Cropland,Continental U.S.,Region,2013,3810.0
+Northeast,Cropland,Northeast,Region,2014,5260.0
+Delaware,Cropland,Northeast,State,2014,7880.0
+Maryland,Cropland,Northeast,State,2014,6470.0
+New Jersey,Cropland,Northeast,State,2014,13000.0
+New York,Cropland,Northeast,State,2014,2530.0
+Pennsylvania,Cropland,Northeast,State,2014,5840.0
+Other States,Cropland,Northeast,State,2014,7020.0
+Lake,Cropland,Lake States,Region,2014,4670.0
+Michigan,Cropland,Lake States,State,2014,4500.0
+Minnesota,Cropland,Lake States,State,2014,4870.0
+Wisconsin,Cropland,Lake States,State,2014,4350.0
+Corn Belt,Cropland,Corn Belt,Region,2014,7000.0
+Illinois,Cropland,Corn Belt,State,2014,7700.0
+Indiana,Cropland,Corn Belt,State,2014,7050.0
+Iowa,Cropland,Corn Belt,State,2014,8750.0
+Missouri,Cropland,Corn Belt,State,2014,3810.0
+Ohio,Cropland,Corn Belt,State,2014,5650.0
+Northern Plains,Cropland,Northern Plains,Region,2014,3090.0
+Kansas,Cropland,Northern Plains,State,2014,2260.0
+Nebraska,Cropland,Northern Plains,State,2014,5180.0
+North Dakota,Cropland,Northern Plains,State,2014,2050.0
+South Dakota,Cropland,Northern Plains,State,2014,3430.0
+Appalachian,Cropland,Appalachian,Region,2014,3780.0
+Kentucky,Cropland,Appalachian,State,2014,3550.0
+North Carolina,Cropland,Appalachian,State,2014,4200.0
+Tennessee,Cropland,Appalachian,State,2014,3400.0
+Virginia,Cropland,Appalachian,State,2014,4460.0
+West Virginia,Cropland,Appalachian,State,2014,3210.0
+Southeast,Cropland,Southeast,Region,2014,3730.0
+Alabama,Cropland,Southeast,State,2014,2850.0
+Florida,Cropland,Southeast,State,2014,6500.0
+Georgia,Cropland,Southeast,State,2014,3080.0
+South Carolina,Cropland,Southeast,State,2014,2460.0
+Delta,Cropland,Delta States,Region,2014,2510.0
+Arkansas,Cropland,Delta States,State,2014,2540.0
+Louisiana,Cropland,Delta States,State,2014,2380.0
+Mississippi,Cropland,Delta States,State,2014,2570.0
+Southern Plains,Cropland,Southern Plains,Region,2014,1630.0
+Oklahoma,Cropland,Southern Plains,State,2014,1500.0
+Texas,Cropland,Southern Plains,State,2014,1680.0
+Mountain,Cropland,Mountain,Region,2014,1690.0
+Arizona,Cropland,Mountain,State,2014,8320.0
+Colorado,Cropland,Mountain,State,2014,1840.0
+Idaho,Cropland,Mountain,State,2014,3040.0
+Montana,Cropland,Mountain,State,2014,987.0
+Nevada,Cropland,Mountain,State,2014,2670.0
+New Mexico,Cropland,Mountain,State,2014,1450.0
+Utah,Cropland,Mountain,State,2014,3260.0
+Wyoming,Cropland,Mountain,State,2014,1370.0
+Pacific,Cropland,Pacific,Region,2014,5860.0
+California,Cropland,Pacific,State,2014,10140.0
+Oregon,Cropland,Pacific,State,2014,2500.0
+Washington,Cropland,Pacific,State,2014,2560.0
+United States,Cropland,Continental U.S.,Region,2014,4100.0
+Northeast,Cropland,Northeast,Region,2015,5330.0
+Delaware,Cropland,Northeast,State,2015,7950.0
+Maryland,Cropland,Northeast,State,2015,6470.0
+New Jersey,Cropland,Northeast,State,2015,13500.0
+New York,Cropland,Northeast,State,2015,2600.0
+Pennsylvania,Cropland,Northeast,State,2015,5900.0
+Other States,Cropland,Northeast,State,2015,7090.0
+Lake,Cropland,Lake States,Region,2015,4730.0
+Michigan,Cropland,Lake States,State,2015,4550.0
+Minnesota,Cropland,Lake States,State,2015,4800.0
+Wisconsin,Cropland,Lake States,State,2015,4700.0
+Corn Belt,Cropland,Corn Belt,Region,2015,6840.0
+Illinois,Cropland,Corn Belt,State,2015,7650.0
+Indiana,Cropland,Corn Belt,State,2015,7000.0
+Iowa,Cropland,Corn Belt,State,2015,8200.0
+Missouri,Cropland,Corn Belt,State,2015,3810.0
+Ohio,Cropland,Corn Belt,State,2015,5850.0
+Northern Plains,Cropland,Northern Plains,Region,2015,3130.0
+Kansas,Cropland,Northern Plains,State,2015,2210.0
+Nebraska,Cropland,Northern Plains,State,2015,5070.0
+North Dakota,Cropland,Northern Plains,State,2015,2140.0
+South Dakota,Cropland,Northern Plains,State,2015,3730.0
+Appalachian,Cropland,Appalachian,Region,2015,3830.0
+Kentucky,Cropland,Appalachian,State,2015,3720.0
+North Carolina,Cropland,Appalachian,State,2015,4100.0
+Tennessee,Cropland,Appalachian,State,2015,3470.0
+Virginia,Cropland,Appalachian,State,2015,4440.0
+West Virginia,Cropland,Appalachian,State,2015,3250.0
+Southeast,Cropland,Southeast,Region,2015,3770.0
+Alabama,Cropland,Southeast,State,2015,2850.0
+Florida,Cropland,Southeast,State,2015,6560.0
+Georgia,Cropland,Southeast,State,2015,3160.0
+South Carolina,Cropland,Southeast,State,2015,2460.0
+Delta,Cropland,Delta States,Region,2015,2600.0
+Arkansas,Cropland,Delta States,State,2015,2630.0
+Louisiana,Cropland,Delta States,State,2015,2500.0
+Mississippi,Cropland,Delta States,State,2015,2620.0
+Southern Plains,Cropland,Southern Plains,Region,2015,1770.0
+Oklahoma,Cropland,Southern Plains,State,2015,1590.0
+Texas,Cropland,Southern Plains,State,2015,1840.0
+Mountain,Cropland,Mountain,Region,2015,1740.0
+Arizona,Cropland,Mountain,State,2015,8320.0
+Colorado,Cropland,Mountain,State,2015,1910.0
+Idaho,Cropland,Mountain,State,2015,3200.0
+Montana,Cropland,Mountain,State,2015,997.0
+Nevada,Cropland,Mountain,State,2015,2670.0
+New Mexico,Cropland,Mountain,State,2015,1440.0
+Utah,Cropland,Mountain,State,2015,3300.0
+Wyoming,Cropland,Mountain,State,2015,1370.0
+Pacific,Cropland,Pacific,Region,2015,6160.0
+California,Cropland,Pacific,State,2015,10690.0
+Oregon,Cropland,Pacific,State,2015,2600.0
+Washington,Cropland,Pacific,State,2015,2630.0
+United States,Cropland,Continental U.S.,Region,2015,4130.0
+Northeast,Cropland,Northeast,Region,2016,5390.0
+Delaware,Cropland,Northeast,State,2016,8200.0
+Maryland,Cropland,Northeast,State,2016,6530.0
+New Jersey,Cropland,Northeast,State,2016,13000.0
+New York,Cropland,Northeast,State,2016,2580.0
+Pennsylvania,Cropland,Northeast,State,2016,6100.0
+Other States,Cropland,Northeast,State,2016,7090.0
+Lake,Cropland,Lake States,Region,2016,4740.0
+Michigan,Cropland,Lake States,State,2016,4500.0
+Minnesota,Cropland,Lake States,State,2016,4750.0
+Wisconsin,Cropland,Lake States,State,2016,4900.0
+Corn Belt,Cropland,Corn Belt,Region,2016,6710.0
+Illinois,Cropland,Corn Belt,State,2016,7450.0
+Indiana,Cropland,Corn Belt,State,2016,7000.0
+Iowa,Cropland,Corn Belt,State,2016,8000.0
+Missouri,Cropland,Corn Belt,State,2016,3770.0
+Ohio,Cropland,Corn Belt,State,2016,5800.0
+Northern Plains,Cropland,Northern Plains,Region,2016,2960.0
+Kansas,Cropland,Northern Plains,State,2016,2050.0
+Nebraska,Cropland,Northern Plains,State,2016,4850.0
+North Dakota,Cropland,Northern Plains,State,2016,2000.0
+South Dakota,Cropland,Northern Plains,State,2016,3520.0
+Appalachian,Cropland,Appalachian,Region,2016,3840.0
+Kentucky,Cropland,Appalachian,State,2016,3770.0
+North Carolina,Cropland,Appalachian,State,2016,3970.0
+Tennessee,Cropland,Appalachian,State,2016,3600.0
+Virginia,Cropland,Appalachian,State,2016,4430.0
+West Virginia,Cropland,Appalachian,State,2016,3160.0
+Southeast,Cropland,Southeast,Region,2016,3920.0
+Alabama,Cropland,Southeast,State,2016,2950.0
+Florida,Cropland,Southeast,State,2016,6730.0
+Georgia,Cropland,Southeast,State,2016,3410.0
+South Carolina,Cropland,Southeast,State,2016,2460.0
+Delta,Cropland,Delta States,Region,2016,2680.0
+Arkansas,Cropland,Delta States,State,2016,2710.0
+Louisiana,Cropland,Delta States,State,2016,2620.0
+Mississippi,Cropland,Delta States,State,2016,2680.0
+Southern Plains,Cropland,Southern Plains,Region,2016,1820.0
+Oklahoma,Cropland,Southern Plains,State,2016,1640.0
+Texas,Cropland,Southern Plains,State,2016,1890.0
+Mountain,Cropland,Mountain,Region,2016,1760.0
+Arizona,Cropland,Mountain,State,2016,8300.0
+Colorado,Cropland,Mountain,State,2016,1910.0
+Idaho,Cropland,Mountain,State,2016,3300.0
+Montana,Cropland,Mountain,State,2016,1010.0
+Nevada,Cropland,Mountain,State,2016,
+New Mexico,Cropland,Mountain,State,2016,1450.0
+Utah,Cropland,Mountain,State,2016,3340.0
+Wyoming,Cropland,Mountain,State,2016,1370.0
+Pacific,Cropland,Pacific,Region,2016,6330.0
+California,Cropland,Pacific,State,2016,10910.0
+Oregon,Cropland,Pacific,State,2016,2730.0
+Washington,Cropland,Pacific,State,2016,2760.0
+United States,Cropland,Continental U.S.,Region,2016,4090.0
+Northeast,Cropland,Northeast,Region,2017,5350.0
+Delaware,Cropland,Northeast,State,2017,8100.0
+Maryland,Cropland,Northeast,State,2017,6530.0
+New Jersey,Cropland,Northeast,State,2017,13000.0
+New York,Cropland,Northeast,State,2017,2580.0
+Pennsylvania,Cropland,Northeast,State,2017,6000.0
+Other States,Cropland,Northeast,State,2017,7200.0
+Lake,Cropland,Lake States,Region,2017,4830.0
+Michigan,Cropland,Lake States,State,2017,4450.0
+Minnesota,Cropland,Lake States,State,2017,4800.0
+Wisconsin,Cropland,Lake States,State,2017,5200.0
+Corn Belt,Cropland,Corn Belt,Region,2017,6670.0
+Illinois,Cropland,Corn Belt,State,2017,7350.0
+Indiana,Cropland,Corn Belt,State,2017,6700.0
+Iowa,Cropland,Corn Belt,State,2017,8100.0
+Missouri,Cropland,Corn Belt,State,2017,3820.0
+Ohio,Cropland,Corn Belt,State,2017,5780.0
+Northern Plains,Cropland,Northern Plains,Region,2017,2830.0
+Kansas,Cropland,Northern Plains,State,2017,1970.0
+Nebraska,Cropland,Northern Plains,State,2017,4550.0
+North Dakota,Cropland,Northern Plains,State,2017,2000.0
+South Dakota,Cropland,Northern Plains,State,2017,3330.0
+Appalachian,Cropland,Appalachian,Region,2017,3890.0
+Kentucky,Cropland,Appalachian,State,2017,3850.0
+North Carolina,Cropland,Appalachian,State,2017,3970.0
+Tennessee,Cropland,Appalachian,State,2017,3640.0
+Virginia,Cropland,Appalachian,State,2017,4480.0
+West Virginia,Cropland,Appalachian,State,2017,3160.0
+Southeast,Cropland,Southeast,Region,2017,3940.0
+Alabama,Cropland,Southeast,State,2017,3000.0
+Florida,Cropland,Southeast,State,2017,6750.0
+Georgia,Cropland,Southeast,State,2017,3420.0
+South Carolina,Cropland,Southeast,State,2017,2500.0
+Delta,Cropland,Delta States,Region,2017,2760.0
+Arkansas,Cropland,Delta States,State,2017,2790.0
+Louisiana,Cropland,Delta States,State,2017,2740.0
+Mississippi,Cropland,Delta States,State,2017,2720.0
+Southern Plains,Cropland,Southern Plains,Region,2017,1930.0
+Oklahoma,Cropland,Southern Plains,State,2017,1740.0
+Texas,Cropland,Southern Plains,State,2017,2010.0
+Mountain,Cropland,Mountain,Region,2017,1780.0
+Arizona,Cropland,Mountain,State,2017,8400.0
+Colorado,Cropland,Mountain,State,2017,1920.0
+Idaho,Cropland,Mountain,State,2017,3400.0
+Montana,Cropland,Mountain,State,2017,1020.0
+Nevada,Cropland,Mountain,State,2017,
+New Mexico,Cropland,Mountain,State,2017,1480.0
+Utah,Cropland,Mountain,State,2017,3420.0
+Wyoming,Cropland,Mountain,State,2017,1350.0
+Pacific,Cropland,Pacific,Region,2017,6570.0
+California,Cropland,Pacific,State,2017,11290.0
+Oregon,Cropland,Pacific,State,2017,2860.0
+Washington,Cropland,Pacific,State,2017,2890.0
+United States,Cropland,Continental U.S.,Region,2017,4090.0
+Northeast,Pasture,Northeast,Region,2007,3420.0
+Maryland,Pasture,Northeast,State,2007,
+New Jersey,Pasture,Northeast,State,2007,16800.0
+New York,Pasture,Northeast,State,2007,980.0
+Pennsylvania,Pasture,Northeast,State,2007,2900.0
+Other States,Pasture,Northeast,State,2007,6360.0
+Lake,Pasture,Lake States,Region,2007,1720.0
+Michigan,Pasture,Lake States,State,2007,2450.0
+Minnesota,Pasture,Lake States,State,2007,1330.0
+Wisconsin,Pasture,Lake States,State,2007,2000.0
+Corn Belt,Pasture,Corn Belt,Region,2007,1910.0
+Illinois,Pasture,Corn Belt,State,2007,2350.0
+Indiana,Pasture,Corn Belt,State,2007,2230.0
+Iowa,Pasture,Corn Belt,State,2007,1780.0
+Missouri,Pasture,Corn Belt,State,2007,1730.0
+Ohio,Pasture,Corn Belt,State,2007,2720.0
+Northern Plains,Pasture,Northern Plains,Region,2007,440.0
+Kansas,Pasture,Northern Plains,State,2007,660.0
+Nebraska,Pasture,Northern Plains,State,2007,400.0
+North Dakota,Pasture,Northern Plains,State,2007,300.0
+South Dakota,Pasture,Northern Plains,State,2007,400.0
+Appalachian,Pasture,Appalachian,Region,2007,3500.0
+Kentucky,Pasture,Appalachian,State,2007,2500.0
+North Carolina,Pasture,Appalachian,State,2007,4800.0
+Tennessee,Pasture,Appalachian,State,2007,3680.0
+Virginia,Pasture,Appalachian,State,2007,4800.0
+West Virginia,Pasture,Appalachian,State,2007,1900.0
+Southeast,Pasture,Southeast,Region,2007,4770.0
+Alabama,Pasture,Southeast,State,2007,1750.0
+Florida,Pasture,Southeast,State,2007,5360.0
+Georgia,Pasture,Southeast,State,2007,7850.0
+South Carolina,Pasture,Southeast,State,2007,2920.0
+Delta,Pasture,Delta States,Region,2007,2060.0
+Arkansas,Pasture,Delta States,State,2007,2080.0
+Louisiana,Pasture,Delta States,State,2007,1980.0
+Mississippi,Pasture,Delta States,State,2007,2110.0
+Southern Plains,Pasture,Southern Plains,Region,2007,1170.0
+Oklahoma,Pasture,Southern Plains,State,2007,900.0
+Texas,Pasture,Southern Plains,State,2007,1220.0
+Mountain,Pasture,Mountain,Region,2007,590.0
+Arizona,Pasture,Mountain,State,2007,900.0
+Colorado,Pasture,Mountain,State,2007,730.0
+Idaho,Pasture,Mountain,State,2007,1620.0
+Montana,Pasture,Mountain,State,2007,740.0
+Nevada,Pasture,Mountain,State,2007,640.0
+New Mexico,Pasture,Mountain,State,2007,280.0
+Utah,Pasture,Mountain,State,2007,900.0
+Wyoming,Pasture,Mountain,State,2007,410.0
+Pacific,Pasture,Pacific,Region,2007,1720.0
+California,Pasture,Pacific,State,2007,2800.0
+Oregon,Pasture,Pacific,State,2007,660.0
+Washington,Pasture,Pacific,State,2007,680.0
+United States,Pasture,Continental U.S.,Region,2007,1030.0
+Northeast,Pasture,Northeast,Region,2008,3480.0
+Maryland,Pasture,Northeast,State,2008,
+New Jersey,Pasture,Northeast,State,2008,16500.0
+New York,Pasture,Northeast,State,2008,1100.0
+Pennsylvania,Pasture,Northeast,State,2008,3100.0
+Other States,Pasture,Northeast,State,2008,6370.0
+Lake,Pasture,Lake States,Region,2008,1840.0
+Michigan,Pasture,Lake States,State,2008,2630.0
+Minnesota,Pasture,Lake States,State,2008,1480.0
+Wisconsin,Pasture,Lake States,State,2008,2130.0
+Corn Belt,Pasture,Corn Belt,Region,2008,2090.0
+Illinois,Pasture,Corn Belt,State,2008,2550.0
+Indiana,Pasture,Corn Belt,State,2008,2510.0
+Iowa,Pasture,Corn Belt,State,2008,2070.0
+Missouri,Pasture,Corn Belt,State,2008,1800.0
+Ohio,Pasture,Corn Belt,State,2008,3200.0
+Northern Plains,Pasture,Northern Plains,Region,2008,516.0
+Kansas,Pasture,Northern Plains,State,2008,750.0
+Nebraska,Pasture,Northern Plains,State,2008,480.0
+North Dakota,Pasture,Northern Plains,State,2008,350.0
+South Dakota,Pasture,Northern Plains,State,2008,470.0
+Appalachian,Pasture,Appalachian,Region,2008,3620.0
+Kentucky,Pasture,Appalachian,State,2008,2570.0
+North Carolina,Pasture,Appalachian,State,2008,4870.0
+Tennessee,Pasture,Appalachian,State,2008,3880.0
+Virginia,Pasture,Appalachian,State,2008,4830.0
+West Virginia,Pasture,Appalachian,State,2008,1950.0
+Southeast,Pasture,Southeast,Region,2008,5040.0
+Alabama,Pasture,Southeast,State,2008,1800.0
+Florida,Pasture,Southeast,State,2008,5930.0
+Georgia,Pasture,Southeast,State,2008,7450.0
+South Carolina,Pasture,Southeast,State,2008,3000.0
+Delta,Pasture,Delta States,Region,2008,2160.0
+Arkansas,Pasture,Delta States,State,2008,2200.0
+Louisiana,Pasture,Delta States,State,2008,2060.0
+Mississippi,Pasture,Delta States,State,2008,2200.0
+Southern Plains,Pasture,Southern Plains,Region,2008,1340.0
+Oklahoma,Pasture,Southern Plains,State,2008,1000.0
+Texas,Pasture,Southern Plains,State,2008,1400.0
+Mountain,Pasture,Mountain,Region,2008,617.0
+Arizona,Pasture,Mountain,State,2008,950.0
+Colorado,Pasture,Mountain,State,2008,710.0
+Idaho,Pasture,Mountain,State,2008,1610.0
+Montana,Pasture,Mountain,State,2008,760.0
+Nevada,Pasture,Mountain,State,2008,650.0
+New Mexico,Pasture,Mountain,State,2008,310.0
+Utah,Pasture,Mountain,State,2008,940.0
+Wyoming,Pasture,Mountain,State,2008,480.0
+Pacific,Pasture,Pacific,Region,2008,1900.0
+California,Pasture,Pacific,State,2008,3020.0
+Oregon,Pasture,Pacific,State,2008,740.0
+Washington,Pasture,Pacific,State,2008,770.0
+United States,Pasture,Continental U.S.,Region,2008,1090.0
+Northeast,Pasture,Northeast,Region,2009,3270.0
+Maryland,Pasture,Northeast,State,2009,
+New Jersey,Pasture,Northeast,State,2009,14900.0
+New York,Pasture,Northeast,State,2009,1050.0
+Pennsylvania,Pasture,Northeast,State,2009,2600.0
+Other States,Pasture,Northeast,State,2009,6060.0
+Lake,Pasture,Lake States,Region,2009,1790.0
+Michigan,Pasture,Lake States,State,2009,2550.0
+Minnesota,Pasture,Lake States,State,2009,1400.0
+Wisconsin,Pasture,Lake States,State,2009,2050.0
+Corn Belt,Pasture,Corn Belt,Region,2009,1950.0
+Illinois,Pasture,Corn Belt,State,2009,2400.0
+Indiana,Pasture,Corn Belt,State,2009,2430.0
+Iowa,Pasture,Corn Belt,State,2009,1880.0
+Missouri,Pasture,Corn Belt,State,2009,1700.0
+Ohio,Pasture,Corn Belt,State,2009,3050.0
+Northern Plains,Pasture,Northern Plains,Region,2009,496.0
+Kansas,Pasture,Northern Plains,State,2009,750.0
+Nebraska,Pasture,Northern Plains,State,2009,450.0
+North Dakota,Pasture,Northern Plains,State,2009,350.0
+South Dakota,Pasture,Northern Plains,State,2009,430.0
+Appalachian,Pasture,Appalachian,Region,2009,3400.0
+Kentucky,Pasture,Appalachian,State,2009,2420.0
+North Carolina,Pasture,Appalachian,State,2009,4600.0
+Tennessee,Pasture,Appalachian,State,2009,3650.0
+Virginia,Pasture,Appalachian,State,2009,4800.0
+West Virginia,Pasture,Appalachian,State,2009,1900.0
+Southeast,Pasture,Southeast,Region,2009,4270.0
+Alabama,Pasture,Southeast,State,2009,1700.0
+Florida,Pasture,Southeast,State,2009,5300.0
+Georgia,Pasture,Southeast,State,2009,6000.0
+South Carolina,Pasture,Southeast,State,2009,2900.0
+Delta,Pasture,Delta States,Region,2009,2130.0
+Arkansas,Pasture,Delta States,State,2009,2200.0
+Louisiana,Pasture,Delta States,State,2009,2100.0
+Mississippi,Pasture,Delta States,State,2009,2050.0
+Southern Plains,Pasture,Southern Plains,Region,2009,1300.0
+Oklahoma,Pasture,Southern Plains,State,2009,1010.0
+Texas,Pasture,Southern Plains,State,2009,1360.0
+Mountain,Pasture,Mountain,Region,2009,517.0
+Arizona,Pasture,Mountain,State,2009,900.0
+Colorado,Pasture,Mountain,State,2009,670.0
+Idaho,Pasture,Mountain,State,2009,1280.0
+Montana,Pasture,Mountain,State,2009,530.0
+Nevada,Pasture,Mountain,State,2009,620.0
+New Mexico,Pasture,Mountain,State,2009,280.0
+Utah,Pasture,Mountain,State,2009,870.0
+Wyoming,Pasture,Mountain,State,2009,410.0
+Pacific,Pasture,Pacific,Region,2009,1730.0
+California,Pasture,Pacific,State,2009,2900.0
+Oregon,Pasture,Pacific,State,2009,700.0
+Washington,Pasture,Pacific,State,2009,820.0
+United States,Pasture,Continental U.S.,Region,2009,1070.0
+Northeast,Pasture,Northeast,Region,2010,3170.0
+Maryland,Pasture,Northeast,State,2010,
+New Jersey,Pasture,Northeast,State,2010,14200.0
+New York,Pasture,Northeast,State,2010,1100.0
+Pennsylvania,Pasture,Northeast,State,2010,2530.0
+Other States,Pasture,Northeast,State,2010,5800.0
+Lake,Pasture,Lake States,Region,2010,1710.0
+Michigan,Pasture,Lake States,State,2010,2290.0
+Minnesota,Pasture,Lake States,State,2010,1340.0
+Wisconsin,Pasture,Lake States,State,2010,2000.0
+Corn Belt,Pasture,Corn Belt,Region,2010,1900.0
+Illinois,Pasture,Corn Belt,State,2010,2500.0
+Indiana,Pasture,Corn Belt,State,2010,2340.0
+Iowa,Pasture,Corn Belt,State,2010,2030.0
+Missouri,Pasture,Corn Belt,State,2010,1600.0
+Ohio,Pasture,Corn Belt,State,2010,2890.0
+Northern Plains,Pasture,Northern Plains,Region,2010,502.0
+Kansas,Pasture,Northern Plains,State,2010,761.0
+Nebraska,Pasture,Northern Plains,State,2010,459.0
+North Dakota,Pasture,Northern Plains,State,2010,357.0
+South Dakota,Pasture,Northern Plains,State,2010,429.0
+Appalachian,Pasture,Appalachian,Region,2010,3240.0
+Kentucky,Pasture,Appalachian,State,2010,2360.0
+North Carolina,Pasture,Appalachian,State,2010,4410.0
+Tennessee,Pasture,Appalachian,State,2010,3510.0
+Virginia,Pasture,Appalachian,State,2010,4400.0
+West Virginia,Pasture,Appalachian,State,2010,1840.0
+Southeast,Pasture,Southeast,Region,2010,4190.0
+Alabama,Pasture,Southeast,State,2010,1810.0
+Florida,Pasture,Southeast,State,2010,5360.0
+Georgia,Pasture,Southeast,State,2010,5220.0
+South Carolina,Pasture,Southeast,State,2010,2950.0
+Delta,Pasture,Delta States,Region,2010,2110.0
+Arkansas,Pasture,Delta States,State,2010,2210.0
+Louisiana,Pasture,Delta States,State,2010,2100.0
+Mississippi,Pasture,Delta States,State,2010,1980.0
+Southern Plains,Pasture,Southern Plains,Region,2010,1300.0
+Oklahoma,Pasture,Southern Plains,State,2010,987.0
+Texas,Pasture,Southern Plains,State,2010,1370.0
+Mountain,Pasture,Mountain,Region,2010,518.0
+Arizona,Pasture,Mountain,State,2010,920.0
+Colorado,Pasture,Mountain,State,2010,650.0
+Idaho,Pasture,Mountain,State,2010,1260.0
+Montana,Pasture,Mountain,State,2010,530.0
+Nevada,Pasture,Mountain,State,2010,
+New Mexico,Pasture,Mountain,State,2010,280.0
+Utah,Pasture,Mountain,State,2010,920.0
+Wyoming,Pasture,Mountain,State,2010,420.0
+Pacific,Pasture,Pacific,Region,2010,1660.0
+California,Pasture,Pacific,State,2010,2790.0
+Oregon,Pasture,Pacific,State,2010,650.0
+Washington,Pasture,Pacific,State,2010,810.0
+United States,Pasture,Continental U.S.,Region,2010,1060.0
+Northeast,Pasture,Northeast,Region,2011,3220.0
+Maryland,Pasture,Northeast,State,2011,
+New Jersey,Pasture,Northeast,State,2011,14000.0
+New York,Pasture,Northeast,State,2011,1200.0
+Pennsylvania,Pasture,Northeast,State,2011,2640.0
+Other States,Pasture,Northeast,State,2011,5730.0
+Lake,Pasture,Lake States,Region,2011,1710.0
+Michigan,Pasture,Lake States,State,2011,2340.0
+Minnesota,Pasture,Lake States,State,2011,1320.0
+Wisconsin,Pasture,Lake States,State,2011,2000.0
+Corn Belt,Pasture,Corn Belt,Region,2011,2000.0
+Illinois,Pasture,Corn Belt,State,2011,2650.0
+Indiana,Pasture,Corn Belt,State,2011,2390.0
+Iowa,Pasture,Corn Belt,State,2011,2520.0
+Missouri,Pasture,Corn Belt,State,2011,1610.0
+Ohio,Pasture,Corn Belt,State,2011,2840.0
+Northern Plains,Pasture,Northern Plains,Region,2011,531.0
+Kansas,Pasture,Northern Plains,State,2011,773.0
+Nebraska,Pasture,Northern Plains,State,2011,503.0
+North Dakota,Pasture,Northern Plains,State,2011,389.0
+South Dakota,Pasture,Northern Plains,State,2011,453.0
+Appalachian,Pasture,Appalachian,Region,2011,3170.0
+Kentucky,Pasture,Appalachian,State,2011,2290.0
+North Carolina,Pasture,Appalachian,State,2011,4590.0
+Tennessee,Pasture,Appalachian,State,2011,3460.0
+Virginia,Pasture,Appalachian,State,2011,4060.0
+West Virginia,Pasture,Appalachian,State,2011,2010.0
+Southeast,Pasture,Southeast,Region,2011,3900.0
+Alabama,Pasture,Southeast,State,2011,1830.0
+Florida,Pasture,Southeast,State,2011,4910.0
+Georgia,Pasture,Southeast,State,2011,4750.0
+South Carolina,Pasture,Southeast,State,2011,2980.0
+Delta,Pasture,Delta States,Region,2011,2120.0
+Arkansas,Pasture,Delta States,State,2011,2160.0
+Louisiana,Pasture,Delta States,State,2011,2200.0
+Mississippi,Pasture,Delta States,State,2011,2000.0
+Southern Plains,Pasture,Southern Plains,Region,2011,1350.0
+Oklahoma,Pasture,Southern Plains,State,2011,985.0
+Texas,Pasture,Southern Plains,State,2011,1430.0
+Mountain,Pasture,Mountain,Region,2011,523.0
+Arizona,Pasture,Mountain,State,2011,
+Colorado,Pasture,Mountain,State,2011,640.0
+Idaho,Pasture,Mountain,State,2011,1230.0
+Montana,Pasture,Mountain,State,2011,530.0
+Nevada,Pasture,Mountain,State,2011,
+New Mexico,Pasture,Mountain,State,2011,290.0
+Utah,Pasture,Mountain,State,2011,920.0
+Wyoming,Pasture,Mountain,State,2011,450.0
+Pacific,Pasture,Pacific,Region,2011,1620.0
+California,Pasture,Pacific,State,2011,2710.0
+Oregon,Pasture,Pacific,State,2011,640.0
+Washington,Pasture,Pacific,State,2011,810.0
+United States,Pasture,Continental U.S.,Region,2011,1070.0
+Northeast,Pasture,Northeast,Region,2012,3240.0
+Maryland,Pasture,Northeast,State,2012,
+New Jersey,Pasture,Northeast,State,2012,13600.0
+New York,Pasture,Northeast,State,2012,1250.0
+Pennsylvania,Pasture,Northeast,State,2012,2650.0
+Other States,Pasture,Northeast,State,2012,5760.0
+Lake,Pasture,Lake States,Region,2012,1740.0
+Michigan,Pasture,Lake States,State,2012,2290.0
+Minnesota,Pasture,Lake States,State,2012,1390.0
+Wisconsin,Pasture,Lake States,State,2012,2010.0
+Corn Belt,Pasture,Corn Belt,Region,2012,2130.0
+Illinois,Pasture,Corn Belt,State,2012,2870.0
+Indiana,Pasture,Corn Belt,State,2012,2450.0
+Iowa,Pasture,Corn Belt,State,2012,2800.0
+Missouri,Pasture,Corn Belt,State,2012,1700.0
+Ohio,Pasture,Corn Belt,State,2012,2970.0
+Northern Plains,Pasture,Northern Plains,Region,2012,648.0
+Kansas,Pasture,Northern Plains,State,2012,938.0
+Nebraska,Pasture,Northern Plains,State,2012,617.0
+North Dakota,Pasture,Northern Plains,State,2012,458.0
+South Dakota,Pasture,Northern Plains,State,2012,561.0
+Appalachian,Pasture,Appalachian,Region,2012,3110.0
+Kentucky,Pasture,Appalachian,State,2012,2330.0
+North Carolina,Pasture,Appalachian,State,2012,4330.0
+Tennessee,Pasture,Appalachian,State,2012,3410.0
+Virginia,Pasture,Appalachian,State,2012,3920.0
+West Virginia,Pasture,Appalachian,State,2012,1980.0
+Southeast,Pasture,Southeast,Region,2012,3700.0
+Alabama,Pasture,Southeast,State,2012,1850.0
+Florida,Pasture,Southeast,State,2012,4820.0
+Georgia,Pasture,Southeast,State,2012,3910.0
+South Carolina,Pasture,Southeast,State,2012,2960.0
+Delta,Pasture,Delta States,Region,2012,2130.0
+Arkansas,Pasture,Delta States,State,2012,2110.0
+Louisiana,Pasture,Delta States,State,2012,2300.0
+Mississippi,Pasture,Delta States,State,2012,2030.0
+Southern Plains,Pasture,Southern Plains,Region,2012,1390.0
+Oklahoma,Pasture,Southern Plains,State,2012,1060.0
+Texas,Pasture,Southern Plains,State,2012,1460.0
+Mountain,Pasture,Mountain,Region,2012,550.0
+Arizona,Pasture,Mountain,State,2012,
+Colorado,Pasture,Mountain,State,2012,640.0
+Idaho,Pasture,Mountain,State,2012,1220.0
+Montana,Pasture,Mountain,State,2012,570.0
+Nevada,Pasture,Mountain,State,2012,
+New Mexico,Pasture,Mountain,State,2012,330.0
+Utah,Pasture,Mountain,State,2012,920.0
+Wyoming,Pasture,Mountain,State,2012,480.0
+Pacific,Pasture,Pacific,Region,2012,1590.0
+California,Pasture,Pacific,State,2012,2680.0
+Oregon,Pasture,Pacific,State,2012,600.0
+Washington,Pasture,Pacific,State,2012,800.0
+United States,Pasture,Continental U.S.,Region,2012,1110.0
+Northeast,Pasture,Northeast,Region,2013,3370.0
+Maryland,Pasture,Northeast,State,2013,
+New Jersey,Pasture,Northeast,State,2013,13500.0
+New York,Pasture,Northeast,State,2013,1240.0
+Pennsylvania,Pasture,Northeast,State,2013,2770.0
+Other States,Pasture,Northeast,State,2013,5840.0
+Lake,Pasture,Lake States,Region,2013,1870.0
+Michigan,Pasture,Lake States,State,2013,2420.0
+Minnesota,Pasture,Lake States,State,2013,1580.0
+Wisconsin,Pasture,Lake States,State,2013,2000.0
+Corn Belt,Pasture,Corn Belt,Region,2013,2290.0
+Illinois,Pasture,Corn Belt,State,2013,3370.0
+Indiana,Pasture,Corn Belt,State,2013,2500.0
+Iowa,Pasture,Corn Belt,State,2013,3220.0
+Missouri,Pasture,Corn Belt,State,2013,1790.0
+Ohio,Pasture,Corn Belt,State,2013,3010.0
+Northern Plains,Pasture,Northern Plains,Region,2013,754.0
+Kansas,Pasture,Northern Plains,State,2013,1150.0
+Nebraska,Pasture,Northern Plains,State,2013,643.0
+North Dakota,Pasture,Northern Plains,State,2013,578.0
+South Dakota,Pasture,Northern Plains,State,2013,667.0
+Appalachian,Pasture,Appalachian,Region,2013,3210.0
+Kentucky,Pasture,Appalachian,State,2013,2560.0
+North Carolina,Pasture,Appalachian,State,2013,4530.0
+Tennessee,Pasture,Appalachian,State,2013,3380.0
+Virginia,Pasture,Appalachian,State,2013,3930.0
+West Virginia,Pasture,Appalachian,State,2013,1990.0
+Southeast,Pasture,Southeast,Region,2013,3770.0
+Alabama,Pasture,Southeast,State,2013,2000.0
+Florida,Pasture,Southeast,State,2013,4850.0
+Georgia,Pasture,Southeast,State,2013,3850.0
+South Carolina,Pasture,Southeast,State,2013,2820.0
+Delta,Pasture,Delta States,Region,2013,2190.0
+Arkansas,Pasture,Delta States,State,2013,2160.0
+Louisiana,Pasture,Delta States,State,2013,2400.0
+Mississippi,Pasture,Delta States,State,2013,2070.0
+Southern Plains,Pasture,Southern Plains,Region,2013,1410.0
+Oklahoma,Pasture,Southern Plains,State,2013,1210.0
+Texas,Pasture,Southern Plains,State,2013,1450.0
+Mountain,Pasture,Mountain,Region,2013,594.0
+Arizona,Pasture,Mountain,State,2013,
+Colorado,Pasture,Mountain,State,2013,680.0
+Idaho,Pasture,Mountain,State,2013,1220.0
+Montana,Pasture,Mountain,State,2013,580.0
+Nevada,Pasture,Mountain,State,2013,
+New Mexico,Pasture,Mountain,State,2013,320.0
+Utah,Pasture,Mountain,State,2013,950.0
+Wyoming,Pasture,Mountain,State,2013,470.0
+Pacific,Pasture,Pacific,Region,2013,1590.0
+California,Pasture,Pacific,State,2013,2650.0
+Oregon,Pasture,Pacific,State,2013,620.0
+Washington,Pasture,Pacific,State,2013,800.0
+United States,Pasture,Continental U.S.,Region,2013,1170.0
+Northeast,Pasture,Northeast,Region,2014,3460.0
+Maryland,Pasture,Northeast,State,2014,6000.0
+New Jersey,Pasture,Northeast,State,2014,13500.0
+New York,Pasture,Northeast,State,2014,1330.0
+Pennsylvania,Pasture,Northeast,State,2014,2900.0
+Other States,Pasture,Northeast,State,2014,5790.0
+Lake,Pasture,Lake States,Region,2014,1950.0
+Michigan,Pasture,Lake States,State,2014,2500.0
+Minnesota,Pasture,Lake States,State,2014,1600.0
+Wisconsin,Pasture,Lake States,State,2014,2150.0
+Corn Belt,Pasture,Corn Belt,Region,2014,2360.0
+Illinois,Pasture,Corn Belt,State,2014,3400.0
+Indiana,Pasture,Corn Belt,State,2014,2550.0
+Iowa,Pasture,Corn Belt,State,2014,3400.0
+Missouri,Pasture,Corn Belt,State,2014,1850.0
+Ohio,Pasture,Corn Belt,State,2014,3100.0
+Northern Plains,Pasture,Northern Plains,Region,2014,954.0
+Kansas,Pasture,Northern Plains,State,2014,1300.0
+Nebraska,Pasture,Northern Plains,State,2014,900.0
+North Dakota,Pasture,Northern Plains,State,2014,750.0
+South Dakota,Pasture,Northern Plains,State,2014,860.0
+Appalachian,Pasture,Appalachian,Region,2014,3280.0
+Kentucky,Pasture,Appalachian,State,2014,2700.0
+North Carolina,Pasture,Appalachian,State,2014,4760.0
+Tennessee,Pasture,Appalachian,State,2014,3400.0
+Virginia,Pasture,Appalachian,State,2014,3930.0
+West Virginia,Pasture,Appalachian,State,2014,2000.0
+Southeast,Pasture,Southeast,Region,2014,3790.0
+Alabama,Pasture,Southeast,State,2014,2100.0
+Florida,Pasture,Southeast,State,2014,4910.0
+Georgia,Pasture,Southeast,State,2014,3650.0
+South Carolina,Pasture,Southeast,State,2014,2900.0
+Delta,Pasture,Delta States,Region,2014,2270.0
+Arkansas,Pasture,Delta States,State,2014,2240.0
+Louisiana,Pasture,Delta States,State,2014,2500.0
+Mississippi,Pasture,Delta States,State,2014,2110.0
+Southern Plains,Pasture,Southern Plains,Region,2014,1540.0
+Oklahoma,Pasture,Southern Plains,State,2014,1360.0
+Texas,Pasture,Southern Plains,State,2014,1580.0
+Mountain,Pasture,Mountain,Region,2014,611.0
+Arizona,Pasture,Mountain,State,2014,
+Colorado,Pasture,Mountain,State,2014,760.0
+Idaho,Pasture,Mountain,State,2014,1220.0
+Montana,Pasture,Mountain,State,2014,640.0
+Nevada,Pasture,Mountain,State,2014,
+New Mexico,Pasture,Mountain,State,2014,360.0
+Utah,Pasture,Mountain,State,2014,1050.0
+Wyoming,Pasture,Mountain,State,2014,490.0
+Pacific,Pasture,Pacific,Region,2014,1610.0
+California,Pasture,Pacific,State,2014,2700.0
+Oregon,Pasture,Pacific,State,2014,630.0
+Washington,Pasture,Pacific,State,2014,810.0
+United States,Pasture,Continental U.S.,Region,2014,1300.0
+Northeast,Pasture,Northeast,Region,2015,3480.0
+Maryland,Pasture,Northeast,State,2015,6000.0
+New Jersey,Pasture,Northeast,State,2015,13500.0
+New York,Pasture,Northeast,State,2015,1430.0
+Pennsylvania,Pasture,Northeast,State,2015,2850.0
+Other States,Pasture,Northeast,State,2015,5840.0
+Lake,Pasture,Lake States,Region,2015,2060.0
+Michigan,Pasture,Lake States,State,2015,2680.0
+Minnesota,Pasture,Lake States,State,2015,1700.0
+Wisconsin,Pasture,Lake States,State,2015,2250.0
+Corn Belt,Pasture,Corn Belt,Region,2015,2440.0
+Illinois,Pasture,Corn Belt,State,2015,3550.0
+Indiana,Pasture,Corn Belt,State,2015,2600.0
+Iowa,Pasture,Corn Belt,State,2015,3400.0
+Missouri,Pasture,Corn Belt,State,2015,1950.0
+Ohio,Pasture,Corn Belt,State,2015,3140.0
+Northern Plains,Pasture,Northern Plains,Region,2015,1020.0
+Kansas,Pasture,Northern Plains,State,2015,1390.0
+Nebraska,Pasture,Northern Plains,State,2015,870.0
+North Dakota,Pasture,Northern Plains,State,2015,850.0
+South Dakota,Pasture,Northern Plains,State,2015,980.0
+Appalachian,Pasture,Appalachian,Region,2015,3340.0
+Kentucky,Pasture,Appalachian,State,2015,2750.0
+North Carolina,Pasture,Appalachian,State,2015,4700.0
+Tennessee,Pasture,Appalachian,State,2015,3500.0
+Virginia,Pasture,Appalachian,State,2015,4000.0
+West Virginia,Pasture,Appalachian,State,2015,2020.0
+Southeast,Pasture,Southeast,Region,2015,3790.0
+Alabama,Pasture,Southeast,State,2015,2140.0
+Florida,Pasture,Southeast,State,2015,4900.0
+Georgia,Pasture,Southeast,State,2015,3580.0
+South Carolina,Pasture,Southeast,State,2015,2940.0
+Delta,Pasture,Delta States,Region,2015,2320.0
+Arkansas,Pasture,Delta States,State,2015,2290.0
+Louisiana,Pasture,Delta States,State,2015,2590.0
+Mississippi,Pasture,Delta States,State,2015,2140.0
+Southern Plains,Pasture,Southern Plains,Region,2015,1570.0
+Oklahoma,Pasture,Southern Plains,State,2015,1430.0
+Texas,Pasture,Southern Plains,State,2015,1600.0
+Mountain,Pasture,Mountain,Region,2015,614.0
+Arizona,Pasture,Mountain,State,2015,
+Colorado,Pasture,Mountain,State,2015,760.0
+Idaho,Pasture,Mountain,State,2015,1250.0
+Montana,Pasture,Mountain,State,2015,650.0
+Nevada,Pasture,Mountain,State,2015,
+New Mexico,Pasture,Mountain,State,2015,340.0
+Utah,Pasture,Mountain,State,2015,1050.0
+Wyoming,Pasture,Mountain,State,2015,510.0
+Pacific,Pasture,Pacific,Region,2015,1630.0
+California,Pasture,Pacific,State,2015,2700.0
+Oregon,Pasture,Pacific,State,2015,660.0
+Washington,Pasture,Pacific,State,2015,820.0
+United States,Pasture,Continental U.S.,Region,2015,1330.0
+Northeast,Pasture,Northeast,Region,2016,3390.0
+Maryland,Pasture,Northeast,State,2016,6100.0
+New Jersey,Pasture,Northeast,State,2016,12500.0
+New York,Pasture,Northeast,State,2016,1400.0
+Pennsylvania,Pasture,Northeast,State,2016,2700.0
+Other States,Pasture,Northeast,State,2016,5850.0
+Lake,Pasture,Lake States,Region,2016,2050.0
+Michigan,Pasture,Lake States,State,2016,2600.0
+Minnesota,Pasture,Lake States,State,2016,1650.0
+Wisconsin,Pasture,Lake States,State,2016,2300.0
+Corn Belt,Pasture,Corn Belt,Region,2016,2420.0
+Illinois,Pasture,Corn Belt,State,2016,3400.0
+Indiana,Pasture,Corn Belt,State,2016,2600.0
+Iowa,Pasture,Corn Belt,State,2016,3400.0
+Missouri,Pasture,Corn Belt,State,2016,1930.0
+Ohio,Pasture,Corn Belt,State,2016,3100.0
+Northern Plains,Pasture,Northern Plains,Region,2016,1020.0
+Kansas,Pasture,Northern Plains,State,2016,1290.0
+Nebraska,Pasture,Northern Plains,State,2016,910.0
+North Dakota,Pasture,Northern Plains,State,2016,830.0
+South Dakota,Pasture,Northern Plains,State,2016,1020.0
+Appalachian,Pasture,Appalachian,Region,2016,3320.0
+Kentucky,Pasture,Appalachian,State,2016,2730.0
+North Carolina,Pasture,Appalachian,State,2016,4700.0
+Tennessee,Pasture,Appalachian,State,2016,3540.0
+Virginia,Pasture,Appalachian,State,2016,3930.0
+West Virginia,Pasture,Appalachian,State,2016,2020.0
+Southeast,Pasture,Southeast,Region,2016,3900.0
+Alabama,Pasture,Southeast,State,2016,2180.0
+Florida,Pasture,Southeast,State,2016,5100.0
+Georgia,Pasture,Southeast,State,2016,3530.0
+South Carolina,Pasture,Southeast,State,2016,2940.0
+Delta,Pasture,Delta States,Region,2016,2410.0
+Arkansas,Pasture,Delta States,State,2016,2450.0
+Louisiana,Pasture,Delta States,State,2016,2600.0
+Mississippi,Pasture,Delta States,State,2016,2190.0
+Southern Plains,Pasture,Southern Plains,Region,2016,1580.0
+Oklahoma,Pasture,Southern Plains,State,2016,1470.0
+Texas,Pasture,Southern Plains,State,2016,1600.0
+Mountain,Pasture,Mountain,Region,2016,617.0
+Arizona,Pasture,Mountain,State,2016,
+Colorado,Pasture,Mountain,State,2016,760.0
+Idaho,Pasture,Mountain,State,2016,1300.0
+Montana,Pasture,Mountain,State,2016,650.0
+Nevada,Pasture,Mountain,State,2016,
+New Mexico,Pasture,Mountain,State,2016,350.0
+Utah,Pasture,Mountain,State,2016,1040.0
+Wyoming,Pasture,Mountain,State,2016,510.0
+Pacific,Pasture,Pacific,Region,2016,1640.0
+California,Pasture,Pacific,State,2016,2700.0
+Oregon,Pasture,Pacific,State,2016,680.0
+Washington,Pasture,Pacific,State,2016,840.0
+United States,Pasture,Continental U.S.,Region,2016,1330.0
+Northeast,Pasture,Northeast,Region,2017,3420.0
+Maryland,Pasture,Northeast,State,2017,6100.0
+New Jersey,Pasture,Northeast,State,2017,12500.0
+New York,Pasture,Northeast,State,2017,1400.0
+Pennsylvania,Pasture,Northeast,State,2017,2800.0
+Other States,Pasture,Northeast,State,2017,5850.0
+Lake,Pasture,Lake States,Region,2017,2080.0
+Michigan,Pasture,Lake States,State,2017,2550.0
+Minnesota,Pasture,Lake States,State,2017,1700.0
+Wisconsin,Pasture,Lake States,State,2017,2350.0
+Corn Belt,Pasture,Corn Belt,Region,2017,2380.0
+Illinois,Pasture,Corn Belt,State,2017,3300.0
+Indiana,Pasture,Corn Belt,State,2017,2590.0
+Iowa,Pasture,Corn Belt,State,2017,3100.0
+Missouri,Pasture,Corn Belt,State,2017,1970.0
+Ohio,Pasture,Corn Belt,State,2017,3050.0
+Northern Plains,Pasture,Northern Plains,Region,2017,1040.0
+Kansas,Pasture,Northern Plains,State,2017,1280.0
+Nebraska,Pasture,Northern Plains,State,2017,930.0
+North Dakota,Pasture,Northern Plains,State,2017,850.0
+South Dakota,Pasture,Northern Plains,State,2017,1060.0
+Appalachian,Pasture,Appalachian,Region,2017,3340.0
+Kentucky,Pasture,Appalachian,State,2017,2760.0
+North Carolina,Pasture,Appalachian,State,2017,4700.0
+Tennessee,Pasture,Appalachian,State,2017,3580.0
+Virginia,Pasture,Appalachian,State,2017,3930.0
+West Virginia,Pasture,Appalachian,State,2017,2040.0
+Southeast,Pasture,Southeast,Region,2017,3910.0
+Alabama,Pasture,Southeast,State,2017,2230.0
+Florida,Pasture,Southeast,State,2017,5100.0
+Georgia,Pasture,Southeast,State,2017,3560.0
+South Carolina,Pasture,Southeast,State,2017,2940.0
+Delta,Pasture,Delta States,Region,2017,2480.0
+Arkansas,Pasture,Delta States,State,2017,2520.0
+Louisiana,Pasture,Delta States,State,2017,2700.0
+Mississippi,Pasture,Delta States,State,2017,2210.0
+Southern Plains,Pasture,Southern Plains,Region,2017,1620.0
+Oklahoma,Pasture,Southern Plains,State,2017,1470.0
+Texas,Pasture,Southern Plains,State,2017,1650.0
+Mountain,Pasture,Mountain,Region,2017,625.0
+Arizona,Pasture,Mountain,State,2017,
+Colorado,Pasture,Mountain,State,2017,760.0
+Idaho,Pasture,Mountain,State,2017,1350.0
+Montana,Pasture,Mountain,State,2017,660.0
+Nevada,Pasture,Mountain,State,2017,
+New Mexico,Pasture,Mountain,State,2017,360.0
+Utah,Pasture,Mountain,State,2017,1050.0
+Wyoming,Pasture,Mountain,State,2017,510.0
+Pacific,Pasture,Pacific,Region,2017,1650.0
+California,Pasture,Pacific,State,2017,2700.0
+Oregon,Pasture,Pacific,State,2017,700.0
+Washington,Pasture,Pacific,State,2017,850.0
+United States,Pasture,Continental U.S.,Region,2017,1350.0
