@@ -1,0 +1,206 @@
+---
+title: "Bacterial Data Cleaning"
+author: "Yunzhi Kong"
+date: "9/17/2020"
+output: html_document
+---
+
+```{r setup,message=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(kableExtra)
+```
+
+This is an R Markdown document that shows the process of cleaning the Bacterial Data sets. 
+You can find the raw data set on the below link:
+
+* [Campylobacter species infections transmitted commonly through food (per 100,000 population)](https://github.com/yunzhinikkikong/ANLY-501-portfolio/blob/FS/FS-1.1-data.csv)
+
+* [Escherichia coli O157:H7 infections commonly transmitted through food (per 100,000 population)](https://github.com/yunzhinikkikong/ANLY-501-portfolio/blob/FS/FS-1.2-data.csv)
+
+* [Salmonella species infections commonly transmitted through food (per 100,000 population)](https://github.com/yunzhinikkikong/ANLY-501-portfolio/blob/FS/FS-1.4-data.csv)
+
+I will clean three data sets combine them into one.
+
+
+## Part one: Campylobacter Species
+
+#### Clean the initial data set
+
+```{r message=FALSE,warning=FALSE}
+# read the CSV file into R
+Campylobacte<-read.csv("FS-1.1-data.csv",header = TRUE)
+# Delete all the note information in the initial file
+Campylobacte<-Campylobacte[2:20,]
+# dealing with missing value and lots of "0" in initial data set
+Campylobacte[Campylobacte == ""] <- NA
+Campylobacte[Campylobacte == "0"] <- NA
+all_na <- function(x) any(!is.na(x))
+Campylobacte<-Campylobacte%>% select_if(all_na)
+# remove Geography information,since they are all the same
+Campylobacte<-Campylobacte[,-2]
+```
+
+#### Split the data set into two, by age and by sex
+
+```{r message=FALSE,warning=FALSE}
+# By Sex
+Campylobacte.sex <- Campylobacte[3:4,]
+# Transform columns into rows and rows into columns
+Campylobacte.sex <-t(Campylobacte.sex)
+female<-c(as.numeric(Campylobacte.sex[2:11,2]))
+male<-c(as.numeric(Campylobacte.sex[2:11,1]))
+Campylobacte.sex<-as.data.frame(c(female,male))
+Campylobacte.sex$sex<-(c(rep("Female",10),rep("Male",10)))
+# Sex is a binary variable
+Campylobacte.sex$sex<-as.factor(Campylobacte.sex$sex)
+Campylobacte.sex$year<-c(rep(seq(2008,2017),2))
+names(Campylobacte.sex)[1] <- "Infection"
+Campylobacte.sex$Species<-"Campylobacte"
+# By Age
+Campylobacte.age <- Campylobacte[-(1:5),]
+Campylobacte.age <- Campylobacte.age[-(c(1,5,8,11)),]
+# Transform columns into rows and rows into columns
+age<-t(Campylobacte.age )
+Campylobacte.age<-as.data.frame(c(c(as.numeric(age[2:11,1])),c(as.numeric(age[2:11,2])),c(as.numeric(age[2:11,3])),c(as.numeric(age[2:11,4])),c(as.numeric(age[2:11,5])),c(as.numeric(age[2:11,6])),c(as.numeric(age[2:11,7])),c(as.numeric(age[2:11,8])),c(as.numeric(age[2:11,9])),c(as.numeric(age[2:11,10]))))
+names(Campylobacte.age)[1] <- "Infection"
+Campylobacte.age$age<-(c(rep("0-4",10),rep("5-11",10),rep("12-17",10),rep("18-24",10),rep("25-44",10),rep("45-54",10),rep("55-64",10),rep("65-74",10),rep("75-84",10),rep("85+",10)))
+# Age group is a factor with 10 levels
+Campylobacte.age$age<-as.factor(Campylobacte.age$age)
+Campylobacte.age$year<-c(rep(seq(2008,2017),10))
+Campylobacte.age$Species<-"Campylobacte"
+```
+
+## Part two: Escherichia coli O157:H7
+
+#### Clean the initial data set
+
+```{r message=FALSE,warning=FALSE}
+# read the CSV file into R
+Escherichia<-read.csv("FS-1.2-data.csv",header = TRUE)
+# Delete all the note information in the initial file
+Escherichia<-Escherichia[2:20,]
+# dealing with missing value and lots of "0" in initial data set
+Escherichia[Escherichia == ""] <- NA
+Escherichia[Escherichia == "0"] <- NA
+all_na <- function(x) any(!is.na(x))
+Escherichia<-Escherichia%>% select_if(all_na)
+# remove Geography information,since they are all the same
+Escherichia<-Escherichia[,-2]
+```
+
+#### Split the data set into two, by age and by sex
+
+```{r message=FALSE,warning=FALSE}
+# By Sex
+Escherichia.sex <- Escherichia[3:4,]
+# Transform columns into rows and rows into columns
+Escherichia.sex <-t(Escherichia.sex)
+female<-c(as.numeric(Escherichia.sex[2:11,2]))
+male<-c(as.numeric(Escherichia.sex[2:11,1]))
+Escherichia.sex<-as.data.frame(c(female,male))
+Escherichia.sex$sex<-(c(rep("Female",10),rep("Male",10)))
+# Sex is a binary variable
+Escherichia.sex$sex<-as.factor(Escherichia.sex$sex)
+Escherichia.sex$year<-c(rep(seq(2008,2017),2))
+names(Escherichia.sex)[1] <- "Infection"
+Escherichia.sex$Species<-"Escherichia"
+# By Age
+Escherichia.age <- Escherichia[-(1:5),]
+Escherichia.age <- Escherichia.age[-(c(1,5,8,11)),]
+# Transform columns into rows and rows into columns
+age<-t(Escherichia.age )
+Escherichia.age<-as.data.frame(c(c(as.numeric(age[2:11,1])),c(as.numeric(age[2:11,2])),c(as.numeric(age[2:11,3])),c(as.numeric(age[2:11,4])),c(as.numeric(age[2:11,5])),c(as.numeric(age[2:11,6])),c(as.numeric(age[2:11,7])),c(as.numeric(age[2:11,8])),c(as.numeric(age[2:11,9])),c(as.numeric(age[2:11,10]))))
+names(Escherichia.age)[1] <- "Infection"
+Escherichia.age$age<-(c(rep("0-4",10),rep("5-11",10),rep("12-17",10),rep("18-24",10),rep("25-44",10),rep("45-54",10),rep("55-64",10),rep("65-74",10),rep("75-84",10),rep("85+",10)))
+# Age group is a factor with 10 levels
+Escherichia.age$age<-as.factor(Escherichia.age$age)
+Escherichia.age$year<-c(rep(seq(2008,2017),10))
+Escherichia.age$Species<-"Escherichia"
+```
+
+
+## Part Three: Salmonella species
+
+#### Clean the initial data set
+
+```{r message=FALSE,warning=FALSE}
+# read the CSV file into R
+Salmonella<-read.csv("FS-1.4-data.csv",header = TRUE)
+# Delete all the note information in the initial file
+Salmonella<-Salmonella[2:20,]
+# dealing with missing value and lots of "0" in initial data set
+Salmonella[Salmonella == ""] <- NA
+Salmonella[Salmonella == "0"] <- NA
+all_na <- function(x) any(!is.na(x))
+Salmonella<-Salmonella%>% select_if(all_na)
+# remove Geography information,since they are all the same
+Salmonella<-Salmonella[,-2]
+```
+
+#### Split the data set into two, by age and by sex
+
+```{r message=FALSE,warning=FALSE}
+# By Sex
+Salmonella.sex <- Salmonella[3:4,]
+# Transform columns into rows and rows into columns
+Salmonella.sex <-t(Salmonella.sex)
+female<-c(as.numeric(Salmonella.sex[2:11,2]))
+male<-c(as.numeric(Salmonella.sex[2:11,1]))
+Salmonella.sex<-as.data.frame(c(female,male))
+Salmonella.sex$sex<-(c(rep("Female",10),rep("Male",10)))
+# Sex is a binary variable
+Salmonella.sex$sex<-as.factor(Salmonella.sex$sex)
+Salmonella.sex$year<-c(rep(seq(2008,2017),2))
+names(Salmonella.sex)[1] <- "Infection"
+Salmonella.sex$Species<-"Salmonella"
+# By Age
+Salmonella.age <- Salmonella[-(1:5),]
+Salmonella.age <- Salmonella.age[-(c(1,5,8,11)),]
+# Transform columns into rows and rows into columns
+age<-t(Salmonella.age )
+Salmonella.age<-as.data.frame(c(c(as.numeric(age[2:11,1])),c(as.numeric(age[2:11,2])),c(as.numeric(age[2:11,3])),c(as.numeric(age[2:11,4])),c(as.numeric(age[2:11,5])),c(as.numeric(age[2:11,6])),c(as.numeric(age[2:11,7])),c(as.numeric(age[2:11,8])),c(as.numeric(age[2:11,9])),c(as.numeric(age[2:11,10]))))
+names(Salmonella.age)[1] <- "Infection"
+Salmonella.age$age<-(c(rep("0-4",10),rep("5-11",10),rep("12-17",10),rep("18-24",10),rep("25-44",10),rep("45-54",10),rep("55-64",10),rep("65-74",10),rep("75-84",10),rep("85+",10)))
+# Age group is a factor with 10 levels
+Salmonella.age$age<-as.factor(Salmonella.age$age)
+Salmonella.age$year<-c(rep(seq(2008,2017),10))
+Salmonella.age$Species<-"Salmonella"
+```
+
+## Part Four: Harmonize the data by Sex and Age
+
+### Bacterial Data by Sex
+
+```{r}
+Bacterial.sex=rbind(Campylobacte.sex,Escherichia.sex,Salmonella.sex)
+kable(head(Bacterial.sex,25))%>%kable_styling()
+write.csv(Bacterial.sex,"Bacterial_sex.csv", row.names = FALSE)
+```
+
+### Bacterial Data by Age
+
+```{r}
+Bacterial.age=rbind(Campylobacte.age,Escherichia.age,Salmonella.age)
+kable(head(Bacterial.age,25))%>%kable_styling()
+write.csv(Bacterial.age,"Bacterial_age.csv", row.names = FALSE)
+```
+
+#### Check the outlier by boxplot
+
+```{r}
+Bacterial.age%>%
+  ggplot(aes(x=Species, y=Infection, color=age)) +
+  geom_boxplot()+
+  ggtitle("Boxplot of Bacterial Data by Age")+
+  facet_wrap(~Species, scale="free")
+
+
+Bacterial.sex%>%
+  ggplot(aes(x=Species, y=Infection, color=sex)) +
+  geom_boxplot()+
+  ggtitle("Boxplot of Bacterial Data by Sex")+
+  facet_wrap(~Species, scale="free")
+
+```
+
