@@ -1,0 +1,61 @@
+---
+title: "Recalls, Market Withdrawals, Safety Alerts Data Cleaning"
+author: "Yunzhi Kong"
+date: "9/19/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(kableExtra)
+```
+
+This is an R Markdown document that shows the process of cleaning the Recalls, Market Withdrawals, Safety Alerts Data. You can find the raw data set on the below link:
+
+* [Recalls, Market Withdrawals, Safety Alerts](https://github.com/yunzhinikkikong/ANLY-501-portfolio/blob/master/Recalls%2C%20Market%20Withdrawals%2C%20%20Safety%20Alerts%20%20FDA.csv)
+
+
+#### Read the CSV file
+
+```{r message=FALSE,warning=FALSE}
+# read the CSV file into R
+alert<-read.csv("Recalls, Market Withdrawals,  Safety Alerts  FDA.csv",header = TRUE,skip=1)
+```
+
+#### Subset the data set Based on the product type
+
+Since the initial data set's product type includes food, drugs, medical device, etc. I will only keep the food section here. Note that, the "food" I mentioned here only includes human food, pet food is excluded.
+
+```{r message=FALSE,warning=FALSE}
+alert<-alert%>%filter(str_detect(alert$Product.Type,"Food")==TRUE)
+alert<-alert%>%filter(str_detect(alert$Product.Type,"Animal")==FALSE)
+# exclude the detailed information following behind the "food&beverage"
+alert$Product.Type<-alert$Product.Type%>%substr(1,16)
+alert$Product.Type<-factor(alert$Product.Type)
+kable(alert%>%count(Product.Type))%>%kable_styling()
+```
+
+As you can see through the table above, there are still some product with intial category is not food & beverage, I will explore the product description to double check.
+
+```{r message=FALSE,warning=FALSE}
+test<-as.data.frame(alert%>%filter(str_detect(alert$Product.Type,"Food & Beverages")==FALSE & str_detect(alert$Product.Type,"Food & Beverage")==FALSE))
+```
+
+There are 22 rows, by checking the product description, there is only one of them should be categorized as food, which is "Natural Herbal Coffee". I will rename the type of that and drop others.
+
+```{r message=FALSE,warning=FALSE}
+keep<-as.data.frame(alert%>%filter(str_detect(alert$Product.Description,"Natural Herbal Coffee")==TRUE))
+alert<-alert%>%filter(!(str_detect(alert$Product.Type,"Food & Beverages")==FALSE & str_detect(alert$Product.Type,"Food & Beverage")==FALSE))
+alert<-rbind(alert,keep)
+```
+
+Now the updated data set only has Food & Beverages, therefore I will delete the variable `Product.Type` in the new data set
+
+```{r message=FALSE,warning=FALSE}
+alert.food<-alert[,-4]
+kable(head(alert.food))%>%kable_styling()
+write.csv(alert.food,"cleanedalert.food.csv", row.names = FALSE)
+```
+
+I will leave the data set like this for now since I have not decided yet about what aspect would I focus on form this data set. I might explore the recall reason, or the distribution of brand/company, or summarize the recall by date or month...
