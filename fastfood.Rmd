@@ -1,0 +1,68 @@
+---
+title: "Food Service Data Cleaning"
+author: "Yunzhi Kong"
+date: "9/19/2020"
+output: html_document
+---
+
+```{r setup,message=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(kableExtra)
+```
+
+This is an R Markdown document that shows the process of cleaning two data sets of Fast-food restaurants employees' behavior on food. The data set only incldude few data. However, it doesn't hurt to explore them.
+
+You can find the raw data sets on the below link:
+
+* [Fast-food restaurants where employees practice proper handwashing](https://github.com/yunzhinikkikong/ANLY-501-portfolio/blob/FS/FS-6.1-data.csv)
+
+* [Fast-food restaurants where hot foods are held at the proper temperature](https://github.com/yunzhinikkikong/ANLY-501-portfolio/blob/FS/FS-6.5-data.csv)
+
+I will combine them into one data set.
+
+
+### Part one: Fast-food restaurants where employees practice proper handwashing
+
+```{r message=FALSE,warning=FALSE}
+#Fast-food restaurants where employees practice proper handwashing
+# read the CSV file into R
+employee_handwashing<-read.csv("FS-6.1-data.csv",header = TRUE)
+# Delete all the footnote information in the initial file
+employee_handwashing<-employee_handwashing[1:2,-2]
+
+### Fast-food restaurants where hot foods are held at the proper temperature
+# read the CSV file into R
+employee_temperature<-read.csv("FS-6.5-data.csv",header = TRUE)
+# Delete all the footnote information in the initial file
+employee_temperature<-employee_temperature[1:2,]
+```
+
+Since the data set is really small, the fastest way is to create a new data set that includes everything we need from these two data sets, that is the estimates. I will just type them out.
+
+```{r message=FALSE,warning=FALSE}
+df1 <- data.frame(Estimate = c(71.3, 76, 75.4),
+                 Year = c("2008", "2013-2014", "2017-2018"),
+                 Behavior=c(rep("proper temperature",3)))
+df2 <- data.frame(Estimate = c(61.2, 34.4, 41.6),
+                 Year = c("2008", "2013-2014", "2017-2018"),
+                 Behavior=c(rep("proper handwashing",3)))
+employee<-rbind(df1,df2)
+write.csv(employee,"employee.csv", row.names = FALSE)
+```
+
+Let's have some visualization
+
+```{r message=FALSE,warning=FALSE}
+employee %>%
+  ggplot(aes(fill=Year, y=Estimate, x=Behavior)) + 
+    geom_bar(position="dodge", stat="identity")+
+    scale_fill_manual(values=c("#69b3a2", "#404080","#203329")) +
+    labs(fill="")+
+    ggtitle("Barplot of Fast-food Restaurants Employee's Behavior")
+
+```
+As we can see through the bar plot above, the value of fast-food restaurants where employees practice proper hand washing were slightly improved since 2008. But the value of fast-food restaurants where hot foods are held at the proper temperature was decreased a lot since 2008, which means the employees turn to ignore the proper temperature than before. However, with such a small sample size, we cannot obtain a reasonable conclusion.
+
+
+
