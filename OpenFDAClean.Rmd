@@ -1,0 +1,62 @@
+---
+title: "OpenFDA Cleaning Data"
+author: "Yunzhi Kong"
+date: "9/21/2020"
+output: html_document
+---
+
+This is an R Markdown document that shows the process of cleaning the adverse food event data sets. By looking at the information in the raw data set I obtained, I found that the content of this dataset is very similar with the #4 National foodborne disease outbreak dataset. Therefore, I will explore this dataset in another way, analyzing the trend of reports happened every year. Here, since I have an API for this data set, instead of cleaning for the raw data set I obtained before, I re-generate the R code, request from the API again with my need. Here is the detailed:
+
+```{r setup}
+library(tidyverse)
+library(ggplot2)
+library(kableExtra)
+library("httr")
+library("jsonlite")
+```
+
+
+#### Use openFDA API to get all food adverse events base on the date.
+```{r}
+call2<-"https://api.fda.gov/food/event.json?count=date_started"
+openFDAAPI_Call2<-httr::GET(call2, accept_json())
+http_type(openFDAAPI_Call2)
+jsonRespText<-content(openFDAAPI_Call2,as="text") 
+jsonRespText<-fromJSON(jsonRespText)
+foodevent = "foodeventtotal.csv"
+FoodeventFile <- file(foodevent)
+Foodadvrseevent<-as.data.frame(jsonRespText$results)
+write.csv(Foodadvrseevent,FoodeventFile, row.names = FALSE)
+```
+
+#### Clean the data set
+```{r}
+adverse<-read.csv("foodeventtotal.csv",header = TRUE)
+# create a new variable "year"
+adverse$year<-adverse$time%>%substr(1,4)
+adverse$year<-as.numeric(adverse$year)
+# select year after 2007
+adverse_new<-adverse%>%filter(year>2006&year<2020)
+write.csv(adverse_new,"adverse_new.csv", row.names = FALSE)
+```
+
+#### create a new data set that summerize the count by year
+
+```{r}
+sumdata<-as.data.frame(adverse_new%>%group_by(year)%>%
+  summarise(sum(count)))
+names(sumdata)<-c("year","total")
+write.csv(sumdata,"adverse_sum.csv", row.names = FALSE)
+```
+
+#### plot the summary data
+```{r}
+ggplot(sumdata, aes(x=year, y=total)) +
+  geom_line( color="#69b3a2", size=2, alpha=0.9, linetype=2) +
+  ggtitle("Total Number of Adverse Food Events by Year")
+```
+
+
+
+
+
