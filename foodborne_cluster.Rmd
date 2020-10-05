@@ -1,0 +1,63 @@
+---
+title: "Foodborne Data Cleaning for Clustering"
+author: "Yunzhi Kong"
+date: "10/3/2020"
+output: html_document
+---
+
+```{r setup,message=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(kableExtra)
+```
+
+#### Clean the Initial Data Set
+
+```{r message=FALSE,warning=FALSE}
+# read the CSV file into R
+Foodborne<-read.csv("NationalOutbreakPublicDataTool.csv",header = TRUE)
+# dealing with missing value and lots of "0" in initial data set
+all_na <- function(x) any(!is.na(x))
+Foodborne<-Foodborne%>% select_if(all_na)
+# Remove unnecessary column
+Foodborne<-Foodborne[,-c(1,2,3,4,6,7,14,15,16)]
+# delete rows with missing value
+Foodborne[Foodborne == ""] <- NA
+Foodborne<-Foodborne%>% drop_na()
+# keep the rows with number of death not equal to 0
+Foodborne<-Foodborne%>%filter(Deaths!=0)
+```
+
+##### re-category the `Etiology` variable with these categories:
+
+* Campylobacter
+* Escherichia
+* Salmonella
+* Norovirus
+* Other
+
+```{r}
+# Remove punctuation and shorter the length of string in Setting
+Foodborne$Etiology_new<-Foodborne$Etiology%>%substr(1,10)
+  # Store Setting information in the new variable
+Foodborne$Etiology_new<-ifelse(str_detect(Foodborne$Etiology_new,"Norovirus")==TRUE,"Norovirus",
+                              ifelse(str_detect(Foodborne$Etiology_new,"Campylobac")==TRUE,"Campylobacter",
+                               ifelse(str_detect(Foodborne$Etiology_new,"Salmonella")==TRUE,"Salmonella",
+                           ifelse(str_detect(Foodborne$Etiology_new,"Escherichi")==TRUE,"Escherichia","Other"))))
+#Foodborne<-Foodborne%>%filter(Etiology_new!="Other")
+```
+
+##### create a new dataframe which will be labled and fully numberic recored dataset
+
+```{r}
+Foodborne_record<-Foodborne[,-c(1,2,5,7)]
+Foodborne_record$Etiology_new<-factor(Foodborne_record$Etiology_new)
+Foodborne_record<-Foodborne_record%>%rename(Label=Etiology_new)
+write.csv(Foodborne_record,"Foodborne_forcluster.csv", row.names = FALSE)
+```
+
+The `Etiology_new` in the new data frame is a categorical variable with 5 levels. I will rename it into `Label`. The the data set is all set for clustering, I will save it to a csv file.
+
+
+
+
