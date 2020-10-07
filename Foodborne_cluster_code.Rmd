@@ -1,0 +1,136 @@
+---
+title: "Foodborne Record Data Clustering"
+author: "Yunzhi Kong"
+date: "10/3/2020"
+output: html_document
+---
+
+```{r setup,message=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(kableExtra)
+library(stats)  
+library(NbClust)
+library(cluster)
+library(mclust)
+library(amap)  ## for Kmeans (notice the cap K)
+library(factoextra) ## for cluster vis, silhouette, etc.
+library(purrr)
+library(philentropy)  ## for distance() which offers 46 metrics
+library(SnowballC)
+library(caTools)
+library(textstem)
+library(stringr)
+library(fpc)
+library(dbscan)
+library(plotly)
+```
+
+
+#### Read the dataset and deal with label
+
+```{r message=FALSE,warning=FALSE}
+# read the CSV file into R
+Foodborne<-read.csv("/Users/nikkkikong/Desktop/ANLY 501/project data/Foodborne_forcluster.csv",header = TRUE)
+## Save the label
+Foodborne$Label<-as.factor(Foodborne$Label)
+Label_3D <- Foodborne$Label
+# Check the frequency by Label
+ggplot(Foodborne, aes(x=Label))+
+  geom_histogram(color="darkblue", fill="lightblue",stat = "count")+
+  ggtitle("Frequency of Each Category")
+# Check the 3D Scatter Plot
+plot_ly(x=Foodborne$Illnesses, y=Foodborne$Hospitalizations, z=Foodborne$Deaths, type="scatter3d", color = Foodborne$Label)
+## Remove the label from the data set
+## remove column 5
+Foodborne_record <- Foodborne[ ,-c(4) ]
+# I will scale my data set first
+Foodborne_record_scale<-scale(Foodborne_record)
+```
+
+#### kmeans
+
+```{r message=FALSE,warning=FALSE}
+(WSS <- fviz_nbclust(Foodborne_record_scale, FUN = hcut, method = "wss", 
+                   k.max = 6) +
+  ggtitle("WSS:Elbow"))
+(SIL <- fviz_nbclust(Foodborne_record_scale, FUN = hcut, method = "silhouette", 
+                   k.max = 6) +
+  ggtitle("Silhouette"))
+(GAP <- fviz_nbclust(Foodborne_record_scale, FUN = hcut, method = "gap_stat", 
+                   k.max = 6) +
+  ggtitle("Gap Stat"))
+## k = 3 with Euclidean
+My_Kmeans_3D_E3<-Kmeans(Foodborne_record_scale, centers=3 ,method = "euclidean")
+fviz_cluster(My_Kmeans_3D_E3, Foodborne_record, main="Euclidean with k=3")
+
+## k = 2 with Euclidean
+My_Kmeans_3D_E3<-Kmeans(Foodborne_record_scale, centers=2 ,method = "euclidean")
+fviz_cluster(My_Kmeans_3D_E3, Foodborne_record, main="Euclidean with k=2")
+
+## k = 4 with Euclidean
+My_Kmeans_3D_E3<-Kmeans(Foodborne_record_scale, centers=4 ,method = "euclidean")
+fviz_cluster(My_Kmeans_3D_E3, Foodborne_record, main="Euclidean with k=4")
+
+
+```
+
+#### Heatmap
+
+```{r message=FALSE,warning=FALSE}
+Dist1<- dist(Foodborne_record_scale, method = "minkowski", p=2) #Euclidean
+fviz_dist(Dist1, gradient = list(low = "#00AFBB", 
+                            mid = "white", high = "#FC4E07"))+
+                            ggtitle("Euclidean Heatmap")
+Dist2<- dist(Foodborne_record_scale, method = "manhattan") #manhattan
+fviz_dist(Dist2, gradient = list(low = "#00AFBB", 
+                            mid = "white", high = "#FC4E07"))+
+                            ggtitle("Manhattan Heatmap")
+
+```
+
+
+
+#### Cluster with hclust
+
+```{r message=FALSE,warning=FALSE}
+dist_M <- stats::dist(Foodborne_record_scale, method="manhattan")
+hc_W <- hclust(dist_M, method="single")
+plot(hc_W, cex=.7, hang=-30,main = "Manhattan Distance with Single Linkage")
+rect.hclust(hc_W, k=4)
+
+
+dist_E <- stats::dist(Foodborne_record_scale, method="euclidean")
+hc_S <- hclust(dist_E, method="ward")
+plot(hc_S, cex=.7, hang=-30,main = "Euclidean Distance with Ward Linkage")
+rect.hclust(hc_S, k=4)
+
+library(philentropy)
+dist_C <- philentropy::distance(Foodborne_record_scale, method="cosine",use.row.names = TRUE,as.dist.obj = TRUE)
+hc_C <- hclust(dist_C, method="complete")
+plot(hc_C, cex=.7, hang=-30,main = "Cosine Distance with Complete Linkage")
+rect.hclust(hc_C, k=4)
+
+```
+
+
+#### Cluster with DBSCAN
+
+```{r message=FALSE,warning=FALSE}
+dbscan::kNNdistplot(Foodborne_record_scale, k =  4)
+abline(h = 0.2, lty = 2)
+db <- fpc::dbscan(Foodborne_record_scale, eps = 0.2, MinPts = 4)
+# Plot DBSCAN results
+fviz_cluster(db, Foodborne_record_scale, stand = FALSE, frame = FALSE, geom = "point",main = "k=3")
+# try k=2
+dbscan::kNNdistplot(Foodborne_record_scale, k =  2)
+abline(h = 0.2, lty = 2)
+db <- fpc::dbscan(Foodborne_record_scale, eps = 0.2, MinPts = 2)
+# Plot DBSCAN results
+fviz_cluster(db, Foodborne_record_scale, stand = FALSE, frame = FALSE, geom = "point",main = "k=6")
+```
+
+
+
+
+
