@@ -1,0 +1,169 @@
+---
+title: "Yelp Data Clustering"
+author: "Yunzhi Kong"
+date: "10/5/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(wordcloud)
+library(tm)
+library(slam)
+library(quanteda)
+library(SnowballC)
+library(proxy)
+library(tidyverse)
+library(ggplot2)
+library(kableExtra)
+library(stats)  
+library(NbClust)
+library(cluster)
+library(mclust)
+library(amap)  ## for Kmeans (notice the cap K)
+library(factoextra) ## for cluster vis, silhouette, etc.
+library(purrr)
+library(philentropy)  ## for distance() which offers 46 metrics
+library(SnowballC)
+library(caTools)
+library(textstem)
+library(stringr)
+library(fpc)
+library(dbscan)
+library(plotly)
+library(heatmaply)
+library(htmlwidgets)
+library(yaml)
+```
+
+#### Read the dataset and deal with label, remove punctuation and stopwords.
+
+```{r message=FALSE,warning=FALSE}
+# read the CSV file into R
+yelp<-read.csv("/Users/nikkkikong/Desktop/ANLY 501/project data/yelpdataforclustering.csv",header = TRUE)
+## Save the label
+Label <- yelp$Label
+## update the index according to the label
+yelp$index<-c(rep("neg",7),rep("neu",7),rep("pos",7))
+yelp$index<-yelp$index%>%paste(1:7,sep = "")
+index <- yelp$index
+yelp<-yelp %>% column_to_rownames(., var = "index")
+## Remove the label from the data set
+yelp_text <- as.data.frame(yelp[ ,-c(1) ])
+yelp_corpus<-tm::Corpus(tm::VectorSource(yelp$text))
+#Conversion to Lowercase
+#yelp_clean = tm_map(yelp_corpus, PlainTextDocument)
+yelp_clean = tm_map(yelp_corpus, tolower)
+#Removing Punctuation
+yelp_clean <- tm_map(yelp_clean, removePunctuation)
+#Remove stopwords
+yelp_clean <- tm_map(yelp_clean, removeWords, stopwords('english'))
+TDM<-TermDocumentMatrix(yelp_clean)
+mat<-as.matrix(TDM)
+DTM<-tm::DocumentTermMatrix(yelp_clean)
+mat2 <- as.matrix(DTM)
+```
+
+#### plot wordcloud by Label 
+
+```{r message=FALSE,warning=FALSE}
+negative<-mat[,1:7]
+neutral<-mat[,8:14]
+positive<-mat[,15:21]
+f.negative <- sort(rowSums(negative),decreasing=TRUE)
+dat.negative <- data.frame(word = names(f.negative),freq=f.negative)
+wordcloud(words = dat.negative$word, freq = dat.negative$freq, min.freq = 2, max.words=100, random.order=FALSE, rot.per=0.30, colors=brewer.pal(8, "Dark2"))
+
+f.positive <- sort(rowSums(positive),decreasing=TRUE)
+dat.positive <- data.frame(word = names(f.positive),freq=f.positive)
+wordcloud(words = dat.positive$word, freq = dat.positive$freq, min.freq = 2, max.words=100, random.order=FALSE, rot.per=0.30, colors=brewer.pal(8, "Dark2"))
+
+f.neutral <- sort(rowSums(neutral),decreasing=TRUE)
+dat.neutral <- data.frame(word = names(f.neutral),freq=f.neutral)
+wordcloud(words = dat.neutral$word, freq = dat.neutral$freq, min.freq = 2, max.words=100, random.order=FALSE, rot.per=0.30, colors=brewer.pal(8, "Dark2"))
+```
+
+#### kmeans
+
+```{r message=FALSE,warning=FALSE}
+DF<-as.data.frame(mat2)
+# updated the index with Label
+row.names(DF)<-index
+(WSS <- fviz_nbclust(DF, FUN = hcut, method = "wss", 
+                   k.max = 5) +
+  ggtitle("WSS:Elbow"))
+(SIL <- fviz_nbclust(DF, FUN = hcut, method = "silhouette", 
+                   k.max = 6) +
+  ggtitle("Silhouette"))
+(GAP <- fviz_nbclust(DF, FUN = hcut, method = "gap_stat", 
+                   k.max = 6) +
+  ggtitle("Gap Stat"))
+
+## k = 3 with Euclidean
+My_Kmeans_3D_E3<-Kmeans(DF, centers=3 ,method = "euclidean")
+fviz_cluster(My_Kmeans_3D_E3, DF, main="Euclidean with k=3")
+
+My_Kmeans_3D_E2<-Kmeans(DF, centers=2 ,method = "euclidean")
+fviz_cluster(My_Kmeans_3D_E2, DF, main="Euclidean with k=2")
+
+My_Kmeans_3D_E4<-Kmeans(DF, centers=4 ,method = "euclidean")
+fviz_cluster(My_Kmeans_3D_E4, DF, main="Euclidean with k=4")
+
+My_Kmeans_3D_M3<-Kmeans(DF, centers=3 ,method = "manhattan")
+fviz_cluster(My_Kmeans_3D_M3,DF, main="Manhattan with k=3", repel = TRUE)
+```
+
+#### Heatmap
+
+```{r message=FALSE,warning=FALSE}
+Dist1<- dist(DF, method = "minkowski", p=2) #Euclidean
+fviz_dist(Dist1, gradient = list(low = "#00AFBB", 
+                            mid = "white", high = "#FC4E07"))+
+                            ggtitle("Euclidean Heatmap")
+Dist2<- dist(DF, method = "manhattan") #manhattan
+fviz_dist(Dist2, gradient = list(low = "#00AFBB", 
+                            mid = "white", high = "#FC4E07"))+
+                            ggtitle("Manhattan Heatmap")
+
+```
+
+#### Cluster with hclust
+
+```{r message=FALSE,warning=FALSE}
+dist_M <- stats::dist(DF, method="manhattan")
+hc_W <- hclust(dist_M, method="single")
+plot(hc_W, cex=.7, hang=-30,main = "Manhattan Distance with Single Linkage")
+rect.hclust(hc_W, k=3)
+
+
+dist_E <- stats::dist(DF, method="euclidean")
+hc_S <- hclust(dist_E, method="ward")
+plot(hc_S, cex=.7, hang=-30,main = "Euclidean Distance with Ward Linkage")
+rect.hclust(hc_S, k=3)
+
+library(philentropy)
+dist_C <- philentropy::distance(DF, method="cosine",use.row.names = TRUE,as.dist.obj = TRUE)
+hc_C <- hclust(dist_C, method="complete")
+plot(hc_C, cex=.7, hang=-30,main = "Cosine Distance with Complete Linkage")
+rect.hclust(hc_C, k=5)
+
+```
+
+#### Cluster with DBSCAN
+
+```{r message=FALSE,warning=FALSE}
+dbscan::kNNdistplot(DF, k =  3)
+abline(h = 6.5, lty = 2)
+db <- fpc::dbscan(DF, eps = 6.5, MinPts = 3)
+# Plot DBSCAN results
+fviz_cluster(db, DF, stand = FALSE, frame = FALSE, geom = "point",main = "k=3")
+```
+
+
+
+
+
+
+
+
+
+
