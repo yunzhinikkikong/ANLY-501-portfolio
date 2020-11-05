@@ -1,0 +1,180 @@
+---
+title: "501Assignment5"
+author: "Yunzhi Kong"
+date: "11/2/2020"
+output: html_document
+---
+
+
+```{r,message=FALSE,warning=FALSE}
+library(rpart)
+library(rattle)
+library(rpart.plot)
+library(RColorBrewer)
+library(Cairo)
+library(network)
+library(textmineR)
+library(igraph)
+library(lsa)
+library(tidyverse)
+library(corrplot)
+library(randomForest)
+library(kableExtra)
+library(caret)
+```
+
+###  Read in and prepare the data.
+
+```{r}
+RecordDataPath="/Users/nikkkikong/Desktop/ANLY 501/project data/Foodborne_forDT.csv"
+RecordDF=read.csv(RecordDataPath)
+head(RecordDF)   ## label here is called "Etiology"
+str(RecordDF$Etiology)
+RecordDF$Etiology<-as.factor(RecordDF$Etiology)
+RecordDF$Etiology.Status<-as.factor(RecordDF$Etiology.Status)
+RecordDF$setting<-as.factor(RecordDF$setting)
+(head(RecordDF))
+```
+
+### Correlation Matrix
+
+```{r}
+correlationMatrix <- cor(RecordDF[,-c(1,2,6)],use="complete.obs")
+corrplot(correlationMatrix, method="number")
+
+```
+
+### Create Training and Testing data
+
+```{r}
+every5_indexes<-seq(1,nrow(RecordDF),5)
+##  [1]   1   6  11  16  21  26  31  36  41  ...
+RecordDF_Test<-RecordDF[every5_indexes, ]
+RecordDF_Train<-RecordDF[-every5_indexes, ]
+```
+
+### REMOVE the labels from the test data
+
+```{r}
+(RecordDF_TestLabels<-RecordDF_Test$Etiology )
+RecordDF_Test<-subset( RecordDF_Test, select = -c(Etiology))
+head(RecordDF_Test)
+```
+
+
+### Decision Trees 
+
+```{r}
+fitR <- rpart(RecordDF_Train$Etiology ~ ., data = RecordDF_Train, method="class")
+summary(fitR)
+## VIS..................
+fancyRpartPlot(fitR)
+
+
+VI<-as.data.frame(fitR$variable.importance)
+VI$type<-c("Deaths","Hospitalizations","Illnesses","setting","Etiology.Status")
+#VI$type<-factor(VI$type)
+ 
+
+ ggplot(VI, aes(x = type, y = fitR$variable.importance)) + 
+   theme_bw() + 
+   geom_bar(aes(fill=type),stat = "identity")+
+   ggtitle("Variable Importance in Decision Tree Model")+
+   xlab("Variable")+
+   ylab("variable.importance")+ 
+   theme(legend.position = "none")
+```
+
+### Predict the Test set
+
+```{r}
+predictedR= predict(fitR,RecordDF_Test, type="class")
+## Confusion Matrix
+cm=confusionMatrix(predictedR,RecordDF_TestLabels)
+cm$table%>%kable(caption = "Confusion Matrix of Decision Tree")%>% kable_styling(full_width=F)
+cm$overall['Accuracy']
+```
+
+
+
+### Remove `Hospitalizations` and create a new tree
+
+```{r}
+head(RecordDF_Train)
+RecordDF_Train_nohos<-RecordDF_Train[,-4]
+fitR_nohos <- rpart(RecordDF_Train_nohos$Etiology ~ ., data = RecordDF_Train_nohos, method="class")
+summary(fitR_nohos)
+## VIS..................
+fancyRpartPlot(fitR_nohos)
+## Predict..................
+predictedR_nohos= predict(fitR_nohos,RecordDF_Test, type="class")
+## Confusion Matrix
+cm1=confusionMatrix(predictedR_nohos,RecordDF_TestLabels)
+cm1$table%>%kable(caption = "Confusion Matrix of Decision Tree after Removing Hospitalizations")%>% kable_styling(full_width=F)
+cm1$overall['Accuracy']
+```
+
+### Remove `Deaths`, `Illnesses` and create a new tree
+
+```{r}
+head(RecordDF_Train)
+RecordDF_Train_hos<-RecordDF_Train[,-c(3,5)]
+fitR_hos <- rpart(RecordDF_Train_hos$Etiology ~ ., data = RecordDF_Train_hos, method="class")
+summary(fitR_hos)
+## VIS..................
+fancyRpartPlot(fitR_hos)
+## Predict..................
+predictedR_hos= predict(fitR_hos,RecordDF_Test, type="class")
+## Confusion Matrix
+cm2=confusionMatrix(predictedR_hos,RecordDF_TestLabels)
+cm2$table%>%kable(caption = "Confusion Matrix of Decision Tree after Removing Deaths, Illnesses")%>% kable_styling(full_width=F)
+cm2$overall['Accuracy']
+```
+
+
+
+### Random Forest
+
+```{r}
+# normalized the numeric variables
+Min_Max_function <- function(x){
+  return(  (x - min(x)) /(max(x) - min(x))   )
+}
+Norm_RecordDF_Test <- as.data.frame(lapply(RecordDF_Test[,c(2,3,4)], Min_Max_function))
+Norm_RecordDF_Train <- as.data.frame(lapply(RecordDF_Train[,c(3,4,5)], Min_Max_function))
+## Now, let's add back the factors and labels
+Norm_Test<-data.frame(Norm_RecordDF_Test,Etiology.Status=RecordDF_Test$Etiology.Status,setting=RecordDF_Test$setting)
+Norm_Train<-data.frame(Norm_RecordDF_Train,Etiology.Status=RecordDF_Train$Etiology.Status,setting=RecordDF_Train$setting,Etiology=RecordDF_Train$Etiology)
+# fit RF model
+fit_RF <- randomForest(Etiology ~ . , data = Norm_Train)
+print(fit_RF)
+pred_RF<-predict(fit_RF, Norm_Test) 
+(table(pred_RF, RecordDF_TestLabels))
+
+## Confusion Matrix
+cm3=confusionMatrix(pred_RF,RecordDF_TestLabels)
+cm3$table%>%kable(caption = "Confusion Matrix of Random Forest")%>% kable_styling(full_width=F)
+cm3$overall['Accuracy']
+#########   vis ---------------------------------
+## Number of nodes in the trees in the RF. 
+hist(treesize(fit_RF))
+## Which variables were most important?
+varImpPlot(fit_RF)
+## Here we see that normalized numeric variables are more important than factor variables.
+## We could remove factors from RF to see if we can improve prediction
+fit_RF2 <- randomForest(Etiology ~ Illnesses+Hospitalizations+Deaths , data = Norm_Train)
+print(fit_RF2)
+pred_RF2<-predict(fit_RF2, Norm_Test) 
+(table(pred_RF2, RecordDF_TestLabels))
+## Confusion Matrix
+cm4=confusionMatrix(pred_RF2,RecordDF_TestLabels)
+cm4$table%>%kable(caption = "Confusion Matrix of Random Forest after Removing Categorical Variables")%>% kable_styling(full_width=F)
+cm4$overall['Accuracy']
+
+## Compare the two RF options....
+fit_RF2$confusion%>%kable(caption = "Confusion Matrix of the Prediction (based on OOB data)")%>% kable_styling(full_width=F)
+fit_RF$confusion%>%kable(caption = "Confusion Matrix of the Prediction (based on OOB data)")%>% kable_styling(full_width=F)
+## There is no difference - so the categorical variables are not
+## hurting or helping the prediction.
+```
+
