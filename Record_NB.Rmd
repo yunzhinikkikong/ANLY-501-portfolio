@@ -1,0 +1,205 @@
+---
+title: "Record_NB"
+author: "Yunzhi Kong"
+date: "11/11/2020"
+output: html_document
+---
+
+```{r,message=FALSE,warning=FALSE}
+library(naivebayes)
+library(e1071)
+library(mlr)
+library(caret)
+library(naivebayes)
+library(mclust)
+library(cluster)
+library(tm)
+library(rpart)
+library(rattle)
+library(rpart.plot)
+library(RColorBrewer)
+library(Cairo)
+library(philentropy)
+library(forcats)
+library(lsa) #for cosine similarity
+library(igraph)  #to create network of cos sim matrix
+library(ggplot2)
+library(corrplot)
+library(pastecs)
+library(dplyr)
+library(ggpubr)   # to plot
+library(gridExtra)   # to put more
+library(grid)        # plot together
+```
+
+
+### Read the Dataset
+
+
+```{r}
+Foodborne<-read.csv("/Users/nikkkikong/Desktop/ANLY 501/project data/Foodborne_forDT.csv")
+Foodborne$Etiology<-factor(Foodborne$Etiology)
+Foodborne$Etiology.Status<-factor(Foodborne$Etiology.Status)
+Foodborne$setting<-factor(Foodborne$setting)
+head(Foodborne,5)
+```
+
+### Naive Bayes Data Preperation
+
+```{r}
+# split the dataset into training set and testing set
+set.seed(2)
+fbindex<-createDataPartition(Foodborne$Etiology,p=0.85,list = FALSE)
+NB_DF_Test=Foodborne%>%filter(!row_number()%in% fbindex)
+NB_DF_Train=Foodborne%>%filter(row_number()%in% fbindex)
+write.csv(NB_DF_Test,"Foodborne_NBtest.csv", row.names = FALSE)
+write.csv(NB_DF_Train,"Foodborne_NBtrain.csv", row.names = FALSE)
+
+# Remove labels and nominal variables, etc.
+NB_TrainLABELS <-NB_DF_Train$Etiology
+NB_TestLABELS <- NB_DF_Test$Etiology
+NB_DF_Test <- NB_DF_Test[-1] 
+## View Test and Train sets
+head(NB_DF_Train, n=5)
+head(NB_DF_Test, n=5)
+```
+
+### Naive Bayes 
+
+```{r}
+NBclassfier <- naiveBayes(Etiology ~.,data=NB_DF_Train, na.action = na.pass)
+NBClassifier_Prediction <- predict(NBclassfier, NB_DF_Test)
+NBclassfier
+print(NBClassifier_Prediction)
+plot(NBClassifier_Prediction,col=1:4,main="Frequency of Prediction (Naive Bayes)")
+cm=confusionMatrix(NBClassifier_Prediction,NB_TestLABELS)
+# plotting the confusion matrix
+# reference from 
+# https://stackoverflow.com/questions/23891140/r-how-to-visualize-confusion-matrix-using-the-caret-package/42940553
+cm_d <- as.data.frame(cm$table)
+# confusion matrix statistics as data.frame
+cm_st <-data.frame(cm$overall)
+cm_st$cm.overall <- round(cm_st$cm.overall,2)
+# plotting the matrix
+cm_d_p <-  ggplot(data = cm_d, aes(x = Prediction , y =  Reference, fill = Freq))+
+  geom_tile() +
+  geom_text(aes(label = paste("",Freq)), color = 'white', size = 8) +
+  theme_light() +
+  guides(fill=FALSE) 
+# plotting the stats
+cm_st_p <-  tableGrob(cm_st)
+grid.arrange(cm_d_p, cm_st_p,nrow = 1, ncol = 2, 
+             top=textGrob("Confusion Matrix and Statistics (Naive Bayes)",gp=gpar(fontsize=15,font=1)))
+```
+
+### SVM Data Preperation 
+
+```{r}
+SVM_DF_Train<-NB_DF_Train
+SVM_DF_Test<-NB_DF_Test
+SVM_TrainLABELS <-NB_TrainLABELS
+SVM_TestLABELS <- NB_TestLABELS
+## View Test and Train sets
+head(SVM_DF_Train, n=5)
+head(SVM_DF_Test, n=5)
+```
+
+
+### SVM with Polynomial Kernel
+
+```{r}
+SVM_fit_P <- svm(Etiology ~., data=SVM_DF_Train, 
+               kernel="polynomial", cost=.5, 
+               scale=FALSE)
+print(SVM_fit_P)
+pred_P <- predict(SVM_fit_P, SVM_DF_Test, type="class")
+plot(pred_P,col=1:4,main="Frequency of Prediction (SVM with Polynomial Kernel)")
+cm=confusionMatrix(pred_P,SVM_TestLABELS)
+# plotting the confusion matrix
+# reference from 
+# https://stackoverflow.com/questions/23891140/r-how-to-visualize-confusion-matrix-using-the-caret-package/42940553
+cm_d <- as.data.frame(cm$table)
+# confusion matrix statistics as data.frame
+cm_st <-data.frame(cm$overall)
+cm_st$cm.overall <- round(cm_st$cm.overall,2)
+# plotting the matrix
+cm_d_p <-  ggplot(data = cm_d, aes(x = Prediction , y =  Reference, fill = Freq))+
+  geom_tile() +
+  geom_text(aes(label = paste("",Freq)), color = 'white', size = 8) +
+  theme_light() +
+  guides(fill=FALSE) 
+# plotting the stats
+cm_st_p <-  tableGrob(cm_st)
+grid.arrange(cm_d_p, cm_st_p,nrow = 1, ncol = 2, 
+             top=textGrob("Confusion Matrix and Statistics (SVM with Polynomial Kernel)",gp=gpar(fontsize=15,font=1)))
+```
+
+### SVM with Linear Kernel
+
+```{r}
+SVM_fit_P <- svm(Etiology ~., data=SVM_DF_Train, 
+               kernel="linear", cost=.3, 
+               scale=FALSE)
+print(SVM_fit_P)
+pred_P <- predict(SVM_fit_P, SVM_DF_Test, type="class")
+plot(pred_P,col=1:4,main="Frequency of Prediction (SVM with Linear Kernel)")
+cm=confusionMatrix(pred_P,SVM_TestLABELS)
+# plotting the confusion matrix
+# reference from 
+# https://stackoverflow.com/questions/23891140/r-how-to-visualize-confusion-matrix-using-the-caret-package/42940553
+cm_d <- as.data.frame(cm$table)
+# confusion matrix statistics as data.frame
+cm_st <-data.frame(cm$overall)
+cm_st$cm.overall <- round(cm_st$cm.overall,2)
+# plotting the matrix
+cm_d_p <-  ggplot(data = cm_d, aes(x = Prediction , y =  Reference, fill = Freq))+
+  geom_tile() +
+  geom_text(aes(label = paste("",Freq)), color = 'white', size = 8) +
+  theme_light() +
+  guides(fill=FALSE) 
+# plotting the stats
+cm_st_p <-  tableGrob(cm_st)
+grid.arrange(cm_d_p, cm_st_p,nrow = 1, ncol = 2, 
+             top=textGrob("Confusion Matrix and Statistics (SVM with Linear Kernel)",gp=gpar(fontsize=15,font=1)))
+```
+
+
+
+
+
+### SVM with Radial Kernel
+
+```{r}
+SVM_fit_P <- svm(Etiology ~., data=SVM_DF_Train, 
+               kernel="radial", cost=.5, 
+               scale=FALSE)
+print(SVM_fit_P)
+pred_P <- predict(SVM_fit_P, SVM_DF_Test, type="class")
+plot(pred_P,col=1:4,main="Frequency of Prediction (SVM with Radial Kernel)")
+cm=confusionMatrix(pred_P,SVM_TestLABELS)
+# plotting the confusion matrix
+# reference from 
+# https://stackoverflow.com/questions/23891140/r-how-to-visualize-confusion-matrix-using-the-caret-package/42940553
+cm_d <- as.data.frame(cm$table)
+# confusion matrix statistics as data.frame
+cm_st <-data.frame(cm$overall)
+cm_st$cm.overall <- round(cm_st$cm.overall,2)
+# plotting the matrix
+cm_d_p <-  ggplot(data = cm_d, aes(x = Prediction , y =  Reference, fill = Freq))+
+  geom_tile() +
+  geom_text(aes(label = paste("",Freq)), color = 'white', size = 8) +
+  theme_light() +
+  guides(fill=FALSE) 
+# plotting the stats
+cm_st_p <-  tableGrob(cm_st)
+grid.arrange(cm_d_p, cm_st_p,nrow = 1, ncol = 2, 
+             top=textGrob("Confusion Matrix and Statistics (SVM with Radial Kernel)",gp=gpar(fontsize=15,font=1)))
+```
+
+
+
+
+
+
+
+
