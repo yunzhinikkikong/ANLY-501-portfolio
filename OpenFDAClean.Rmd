@@ -38,6 +38,11 @@ adverse$year<-as.numeric(adverse$year)
 # select year after 2007
 adverse_new<-adverse%>%filter(year>2006&year<2020)
 write.csv(adverse_new,"adverse_new.csv", row.names = FALSE)
+ggplot(adverse_new, aes(x=time, y=count)) +
+  geom_line( color="#69b3a2") + 
+  xlab("")  +
+  theme(axis.text.x=element_text(angle=60, hjust=1)) +
+  ggtitle("Time Series Plot of Food Adverse Events")
 ```
 
 #### create a new data set that summerize the count by year
