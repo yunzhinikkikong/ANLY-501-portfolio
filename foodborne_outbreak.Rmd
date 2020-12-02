@@ -137,6 +137,36 @@ Foodborne_new%>%
   ggtitle("Updated Boxplot of Number of Foodborne Illness")
 
 write.csv(Foodborne_new,"Foodborne_new.csv", row.names = FALSE)
+
+df_count <-count(Foodborne_new, "Year")
+ggplot(data=df_count, aes(x=Year, y=freq)) +
+  geom_bar(stat="identity", fill="steelblue")+
+  theme_minimal()+
+  ggtitle("Number of Foodborne Disease Reported Every Year")
+
+df_count <-count(Foodborne_new, "State")
+df_count<-df_count%>%arrange(desc(freq))%>% top_n(10)
+ggplot(data=df_count, aes(x=State, y=freq)) +
+  geom_bar(stat="identity", fill="salmon")+
+  theme_minimal()+
+  ggtitle("Top 10 State with the Highest number of Foodborne Disease Reported ")
+
+
+df_count <-count(Foodborne_new, "setting_new")
+df_count<-df_count%>%arrange(desc(freq))
+ggplot(data=df_count, aes(x=setting_new, y=freq)) +
+  geom_bar(stat="identity", fill="red")+
+  theme_minimal()+
+  xlab("Setting")+
+  ggtitle("Number of Foodborne Disease Reported by Settings")
+
+df_count <-count(Foodborne_new, "Etiology_new")
+df_count <-df_count[-4,]
+ggplot(data=df_count, aes(x=Etiology_new, y=freq)) +
+  geom_bar(stat="identity", fill="sienna")+
+  theme_minimal()+
+  xlab("Etiology")+
+  ggtitle("Number of Foodborne Disease Reported by Etiology Species")
 ```
 
 
