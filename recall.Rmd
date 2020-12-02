@@ -56,6 +56,18 @@ Now the updated data set only has Food & Beverages, therefore I will delete the 
 alert.food<-alert[,-4]
 kable(head(alert.food))%>%kable_styling()
 write.csv(alert.food,"cleanedalert.food.csv", row.names = FALSE)
+alert.food$Date <- as.Date(alert.food$Date, format="%d/%m/%Y")
+
+## Tabulate
+tab <- table(cut(alert.food$Date, 'year'))
+
+## Format
+df=data.frame(Year=format(as.Date(names(tab)), '%Y'),
+           Frequency=as.vector(tab))
+
+ggplot(data=df, aes(x=Year, y=Frequency)) +
+  geom_bar(stat="identity", fill="steelblue")+
+  theme_minimal()+
+  ggtitle("Frequency of Food & Beverages' Recalls, Market Withdrawals, Safety Alerts")
 ```
 
-I will leave the data set like this for now since I have not decided yet about what aspect would I focus on form this data set. I might explore the recall reason, or the distribution of brand/company, or summarize the recall by date or month...
